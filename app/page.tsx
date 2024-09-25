@@ -7,12 +7,11 @@ export default function Home() {
           <path d="M215.919 116.446L157.811 174.554L215.919 174.554V116.446Z" fill="white" />
           <path d="M1 116.446L58.8105 173.973L1 173.973V116.446Z" fill="white" />
         </svg>
-        <div className="flex flex-col items-center gap-3">
-
-          <h1 className="text-5xl font-black font-display">
+        <div className="flex flex-col items-center gap-3 text-center">
+          <h1 className="text-3xl font-black md:text-4xl lg:text-5xl font-display">
             Masonry Studio
           </h1>
-          <code className="font-mono text-2xl font-semibold">
+          <code className="font-mono text-xl font-semibold md:text-2xl lg:text-3xl">
             Under Construction
           </code>
         </div>
