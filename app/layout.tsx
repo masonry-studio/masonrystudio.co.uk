@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Sora } from "next/font/google";
+import { Inter, JetBrains_Mono, Sora } from "next/font/google";
 
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme/provider";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 const sora = Sora({
   subsets: ["latin"],
@@ -28,9 +37,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} ${jetbrainsMono.variable} min-h-screen w-full antialiased bg-neutral-950`}
+        className={cn(inter.variable, sora.variable, jetbrainsMono.variable, "bg-background min-h-screen w-full antialiased font-sans")}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
