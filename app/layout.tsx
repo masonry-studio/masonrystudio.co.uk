@@ -35,9 +35,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(inter.variable, sora.variable, jetbrainsMono.variable, "bg-background min-h-screen w-full antialiased font-sans")}
+        className={cn(inter.variable, sora.variable, jetbrainsMono.variable, "bg-background min-h-screen font-sans antialiased")}
       >
         <ThemeProvider
           attribute="class"
@@ -46,7 +46,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <main className="mx-auto flex-1 overflow-hidden min-h-screen">
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
