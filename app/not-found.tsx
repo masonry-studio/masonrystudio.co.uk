@@ -9,7 +9,7 @@ export default function NotFoundPage() {
 					┐(￣∀￣)┌
 				</h1>
 				<p className="text-xl text-neutral-500 dark:text-neutral-400">
-					This page doesn't exist or you don't have access to it.
+					This page doesn&apos;t exist or you don&apos;t have access to it.
 				</p>
 				<Link href="/">
 					<Button>

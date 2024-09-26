@@ -50,7 +50,7 @@ export default function NavbarLinks() {
 				<NavigationMenuItem className="px-4">
 					<Link href="/contact">
 						<Button>
-							Let's Talk
+							Let&apos;s Talk
 						</Button>
 					</Link>
 				</NavigationMenuItem>
