@@ -99,7 +99,7 @@ export default function Navbar() {
 						</Link>
 
 						<button
-							className="ml-6 sm:hidden"
+							className="ml-6 md:hidden"
 							onClick={() => setHamburgerMenuIsOpen(open => !open)}
 						>
 							<span className="sr-only">Toggle menu</span>
