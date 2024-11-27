@@ -18,30 +18,43 @@ import { ThemeToggle } from "../theme/toggle"
 
 export default function NavbarLinks() {
 	return (
-		<NavigationMenu>
+		<NavigationMenu className="sm:block hidden">
 			<NavigationMenuList>
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Web Development</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<div className="p-4">
-							<p>
-								Content
-							</p>
-						</div>
+						<ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+							<ListItem href="/development/start-ups" title="Start Ups">
+								Professional and affordable web development services for start-ups.
+							</ListItem>
+							<ListItem href="/development/bespoke" title="Bespoke">
+								Need something custom? We can help you with that.
+							</ListItem>
+							{/* TODO: Uncomment this when we have ecommerce plans in action */}
+							{/* <ListItem href="/development/start-ups" title="Ecommerce">
+								Easily sell your products online with our ecommerce solutions.
+							</ListItem> */}
+						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Hosting</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<div className="p-4">
-							<p>
-								Content
-							</p>
-						</div>
+						<ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+							<ListItem href="/hosting/shared" title="Shared Hosting">
+								Cheap and reliable shared hosting for any kind of website.
+							</ListItem>
+							<ListItem href="/hosting/dedicated" title="Dedicated Hosting">
+								High performance dedicated hosting for your business.
+							</ListItem>
+							<ListItem href="/hosting/our-platform" title="Our Platform">
+								Learn more about how our hosting platform works.
+							</ListItem>
+						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/about" legacyBehavior passHref>
+					<Link href="/about">
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 							About
 						</NavigationMenuLink>
