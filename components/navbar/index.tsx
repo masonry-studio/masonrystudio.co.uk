@@ -87,7 +87,7 @@ export default function Navbar() {
 					variants={mobilenavbarVariant}
 					animate={hamburgerMenuIsOpen ? 'animate' : 'exit'}
 					className={cn(
-						`bg-background/70 fixed left-0 top-0 z-50 h-screen w-full overflow-auto backdrop-blur-md`,
+						`bg-background/70 fixed left-0 top-0 z-50 h-dvh w-full overflow-auto backdrop-blur-md`,
 						{
 							'pointer-events-none': !hamburgerMenuIsOpen,
 						},
@@ -113,7 +113,7 @@ export default function Navbar() {
 						animate={hamburgerMenuIsOpen ? 'open' : 'exit'}
 						layout="position"
 					>
-						<ScrollArea className="h-screen-no-nav">
+						<ScrollArea className="h-[calc(h-dvh-69px)]">
 							<MobileLinks open={hamburgerMenuIsOpen} setOpen={setHamburgerMenuIsOpen} />
 						</ScrollArea>
 					</motion.ul>
