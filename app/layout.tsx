@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={cn(inter.variable, sora.variable, jetbrainsMono.variable, "bg-background min-h-screen font-sans antialiased")}
       >
