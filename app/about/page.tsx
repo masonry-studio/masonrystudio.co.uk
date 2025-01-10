@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { CircleCheckBig, Code2, Container, FileJson2, LayoutDashboard, MonitorCog } from 'lucide-react'
 import Card1 from '@/components/cards/card1'
 import Card2 from '@/components/cards/card2'
+import PageBanner from '@/components/banners/pageBanner'
+
+const banner = { title: 'About us', description: 'content goes here for a brief insight in the page', image: bannerImg, alt: 'test image' }
 
 const values = [
     { id: 1, title: 'Innovation First', body: 'We believe that the best results come from staying ahead of the curve. By using the latest technologies like Next.js and Payload CMS, we create modern, efficient websites that offer more flexibility, speed, and scalability than traditional solutions.', icon: CircleCheckBig, colour: '#FC6432' },
@@ -39,19 +42,7 @@ export default async function About() {
             </svg>
 
             <section className="container flex flex-row w-full my-24 p-8">
-                <div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
-                    <div>
-                        <h1 className="header-text">
-                            About us
-                        </h1>
-                        <p>Breadcrumb goes here</p>
-                    </div>
-                    <p className='min-h-[78px]'>content goes here for a brief insight in the page</p>
-                    <button className=" my-auto backdrop-filter-[12px] group h-7 rounded-full border dark:border-white/5 bg-black/5 dark:bg-white/20 px-3 text-xs text-white hover:cursor-pointer hover:bg-black/10 dark:hover:bg-white/15 dark:text-black">get in touch now</button>
-                </div>
-                <div className='max-w-[600px] flex'>
-                    <Image className='my-auto' src={bannerImg} alt="test image" priority />
-                </div>
+                <PageBanner content={banner}/> 
             </section>
 
             <section className='container my-24'>

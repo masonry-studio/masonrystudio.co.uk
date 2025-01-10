@@ -9,3 +9,16 @@
 .body-text{
     @apply text-sm sm:text-base;
 }
+
+.breadcrumbs{
+    @apply flex items-center h-3 gap-2 text-sm;
+    
+    > li {
+      @apply text-[#9CA5AF] list-none;
+
+      & a:hover{
+        @apply text-white;
+      }
+
+    }
+}
