@@ -21,14 +21,24 @@ export default function NavbarLinks() {
 		<NavigationMenu className="sm:block hidden">
 			<NavigationMenuList>
 				<NavigationMenuItem>
-					<NavigationMenuTrigger>Web Development</NavigationMenuTrigger>
+					<NavigationMenuTrigger>
+						Web Development
+					</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-							<ListItem href="/development/start-ups" title="Start Ups">
-								Professional and affordable web development services for start-ups.
+							<ListItem
+								href="/development/start-ups"
+								title="Start Ups"
+							>
+								Professional and affordable web development
+								services for start-ups.
 							</ListItem>
-							<ListItem href="/development/bespoke" title="Bespoke">
-								Need something custom? We can help you with that.
+							<ListItem
+								href="/development/bespoke"
+								title="Bespoke"
+							>
+								Need something custom? We can help you with
+								that.
 							</ListItem>
 							{/* TODO: Uncomment this when we have ecommerce plans in action */}
 							{/* <ListItem href="/development/start-ups" title="Ecommerce">
@@ -41,13 +51,24 @@ export default function NavbarLinks() {
 					<NavigationMenuTrigger>Hosting</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-							<ListItem href="/hosting/shared" title="Shared Hosting">
-								Cheap and reliable shared hosting for any kind of website.
+							<ListItem
+								href="/hosting/shared"
+								title="Shared Hosting"
+							>
+								Cheap and reliable shared hosting for any kind
+								of website.
 							</ListItem>
-							<ListItem href="/hosting/dedicated" title="Dedicated Hosting">
-								High performance dedicated hosting for your business.
+							<ListItem
+								href="/hosting/dedicated"
+								title="Dedicated Hosting"
+							>
+								High performance dedicated hosting for your
+								business.
 							</ListItem>
-							<ListItem href="/hosting/our-platform" title="Our Platform">
+							<ListItem
+								href="/hosting/our-platform"
+								title="Our Platform"
+							>
 								Learn more about how our hosting platform works.
 							</ListItem>
 						</ul>
@@ -55,16 +76,17 @@ export default function NavbarLinks() {
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<Link href="/about">
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+						<NavigationMenuLink
+							className={navigationMenuTriggerStyle()}
+							asChild
+						>
 							About
 						</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem className="px-4">
 					<Link href="/contact">
-						<Button>
-							Let&apos;s Talk
-						</Button>
+						<Button>Let&apos;s Talk</Button>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
@@ -72,7 +94,7 @@ export default function NavbarLinks() {
 				</NavigationMenuItem>
 			</NavigationMenuList>
 		</NavigationMenu>
-	)
+	);
 }
 
 const ListItem = React.forwardRef<
