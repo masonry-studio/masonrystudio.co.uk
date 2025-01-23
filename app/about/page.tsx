@@ -4,9 +4,13 @@ import { CircleCheckBig, Code2, Container, FileJson2, LayoutDashboard, MonitorCo
 import Card1 from '@/components/cards/card1'
 import Card2 from '@/components/cards/card2'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import PageBanner from '@/components/banners/pageBanner'
 
 const banner = { title: 'About us', description: 'content goes here for a brief insight in the page', image: bannerImg, alt: 'test image' }
+=======
+import Faqs from '@/components/faqs'
+>>>>>>> Stashed changes
 =======
 import Faqs from '@/components/faqs'
 >>>>>>> Stashed changes
