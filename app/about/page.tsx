@@ -1,4 +1,4 @@
-import bannerImg from '@/pub/images/Image.png'
+import bannerImg from '@/public/images/Image.png'
 import { CircleCheckBig, Code2, Container, FileJson2, LayoutDashboard, MonitorCog } from 'lucide-react'
 import Card1 from '@/components/cards/card1'
 import Card2 from '@/components/cards/card2'
