@@ -5,6 +5,9 @@
 .subheader-text{
     @apply text-3xl md:text-4xl font-bold;
 }
+.subheader-text-2{
+    @apply text-lg md:text-xl font-semibold;
+}
 
 .body-text{
     @apply text-sm sm:text-base;

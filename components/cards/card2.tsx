@@ -1,13 +1,13 @@
 export default function Card2({ content }: { content: { id: number, icon: any, colour: string, title: string, body: string, cta: boolean, button: { text: string, colour: string } } }) {
 
 
-    const btnclass = `w-fit bg-none border-2 ${content.button.colour} text-[#9CA5AF] hover:text-white rounded-full px-4 py-2 mt-auto active:scale-95 z-10`
+    const btnclass = `body-text w-fit bg-none border-2 ${content.button.colour} text-[#9CA5AF] hover:text-white rounded-full px-4 py-2 mt-auto active:scale-95 z-10`
 
     return (
         <div className='relative flex flex-col bg-[#eeeeee] dark:bg-[#0F0F0F] rounded-2xl w-full p-4 gap-4'>
             <content.icon color={content.colour} size={40} strokeWidth={1} />
-            <h3 className='font-semibold text-xl'>{content.title}</h3>
-            <p className='text-base font-bold text-[#9CA5AF] min-h-10 mb-8'>
+            <h3 className='subheader-text-2'>{content.title}</h3>
+            <p className='body-text font-bold text-[#9CA5AF] min-h-10 mb-8'>
                 {content.body}
             </p>
             {content.cta &&

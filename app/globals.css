@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(../pub/css/styles.css);
+@import url(../public/css/styles.css);
 
 @layer utilities {
   .text-balance {
