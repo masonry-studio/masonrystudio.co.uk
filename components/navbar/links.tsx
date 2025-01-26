@@ -75,12 +75,14 @@ export default function NavbarLinks() {
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<NavigationMenuLink
-						href="/about"
-						className={navigationMenuTriggerStyle()}
-					>
-						About
-					</NavigationMenuLink>
+					<Link href="/about">
+						<NavigationMenuLink
+							className={navigationMenuTriggerStyle()}
+							asChild
+						>
+							About
+						</NavigationMenuLink>
+					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem className="px-4">
 					<Link href="/contact">
