@@ -11,7 +11,6 @@ import {
 	NavigationMenuLink,
 	NavigationMenuList,
 	NavigationMenuTrigger,
-	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
 import { ThemeToggle } from "../theme/toggle";
@@ -74,14 +73,9 @@ export default function NavbarLinks() {
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
-				<NavigationMenuItem>
+				<NavigationMenuItem className="px-4">
 					<Link href="/about">
-						<NavigationMenuLink
-							className={navigationMenuTriggerStyle()}
-							asChild
-						>
-							About
-						</NavigationMenuLink>
+						<Button variant="ghost">About</Button>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem className="px-4">
