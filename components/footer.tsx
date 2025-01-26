@@ -104,7 +104,7 @@ export default function Footer() {
 										variant="link"
 										className="p-0 sm:px-4 sm:py-2"
 									>
-										Let's Talk
+										Let&apos;s Talk
 									</Button>
 								</Link>
 							</div>
