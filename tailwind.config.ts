@@ -11,16 +11,25 @@ const config: Config = {
 	theme: {
 		container: {
 			center: true,
-			padding: "2rem",
+			padding: '2rem',
 			screens: {
-				"2xl": "1400px",
-			},
+				'2xl': '1400px'
+			}
 		},
 		extend: {
 			fontFamily: {
-				sans: ["var(--font-inter)", ...fontFamily.sans],
-				display: ["var(--font-sora)", ...fontFamily.sans],
-				mono: ["var(--font-jetbrains-mono)", ...fontFamily.mono]
+				sans: [
+					'var(--font-inter)',
+					...fontFamily.sans
+				],
+				display: [
+					'var(--font-sora)',
+					...fontFamily.sans
+				],
+				mono: [
+					'var(--font-jetbrains-mono)',
+					...fontFamily.mono
+				]
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -73,38 +82,58 @@ const config: Config = {
 				'screen-no-nav': 'calc(100vh - 69px)'
 			},
 			animation: {
-				"accordion-down": "accordion-down 0.2s ease-out",
-				"accordion-up": "accordion-up 0.2s ease-out",
-				"shimmer": "shimmer 8s infinite",
-				"fade-in": "fade-in 1000ms var(--animation-delay, 0ms) ease forwards",
-				"fade-up": "fade-up 1000ms var(--animation-delay, 0ms) ease forwards",
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'shimmer': 'shimmer 8s infinite',
+				'fade-in': 'fade-in 1000ms var(--animation-delay, 0ms) ease forwards',
+				'fade-up': 'fade-up 1000ms var(--animation-delay, 0ms) ease forwards',
 			},
 			keyframes: {
-				"accordion-down": {
-					from: { height: "0" },
-					to: { height: "var(--radix-accordion-content-height)" },
-				},
-				"accordion-up": {
-					from: { height: "var(--radix-accordion-content-height)" },
-					to: { height: "0" },
-				},
-				"shimmer": {
-					"0%, 90%, 100%": {
-						"background-position": "calc(-100% - var(--shimmer-width)) 0",
+				'accordion-down': {
+					from: {
+						height: '0'
 					},
-					"30%, 60%": {
-						"background-position": "calc(100% + var(--shimmer-width)) 0",
+					to: {
+						height: 'var(--radix-accordion-content-height)'
+					}
+				},
+				'accordion-up': {
+					from: {
+						height: 'var(--radix-accordion-content-height)'
 					},
+					to: {
+						height: '0'
+					}
 				},
-				"fade-in": {
-					from: { opacity: "0", transform: "translateY(-10px)" },
-					to: { opacity: "1", transform: "none" },
+				'shimmer': {
+					'0%, 90%, 100%': {
+						'background-position': 'calc(-100% - var(--shimmer-width)) 0'
+					},
+					'30%, 60%': {
+						'background-position': 'calc(100% + var(--shimmer-width)) 0'
+					}
 				},
-				"fade-up": {
-					from: { opacity: "0", transform: "translateY(20px)" },
-					to: { opacity: "1", transform: "none" },
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(-10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'none'
+					}
 				},
-			},
+				'fade-up': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'none'
+					}
+				},
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -12,9 +12,9 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { Button } from "../ui/button"
-import { ThemeToggle } from "../theme/toggle"
+} from "@/components/ui/navigation-menu";
+import { Button } from "../ui/button";
+import { ThemeToggle } from "../theme/toggle";
 
 export default function NavbarLinks() {
 	return (
@@ -112,13 +112,15 @@ const ListItem = React.forwardRef<
 					)}
 					{...props}
 				>
-					<div className="text-sm font-medium leading-none">{title}</div>
+					<div className="text-sm font-medium leading-none">
+						{title}
+					</div>
 					<p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
 						{children}
 					</p>
 				</a>
 			</NavigationMenuLink>
 		</li>
-	)
-})
-ListItem.displayName = "ListItem"
+	);
+});
+ListItem.displayName = "ListItem";
