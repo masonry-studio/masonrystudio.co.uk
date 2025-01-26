@@ -20,7 +20,7 @@ export default function FeatureGridItem({
 			</p>
 			{cta && (
 				<button
-					className={`text-body w-fit bg-none border border-[${colour} text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full px-4 py-2 mt-auto active:scale-95 z-10`}
+					className={`text-body w-fit bg-none border border-[${colour}] text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors rounded-full px-4 py-2 mt-auto active:scale-95 z-10`}
 				>
 					Learn More
 				</button>

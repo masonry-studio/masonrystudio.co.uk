@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme/provider";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/footer";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -35,7 +36,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
 					inter.variable,
@@ -54,6 +55,7 @@ export default function RootLayout({
 					<main className="mx-auto flex-1 overflow-hidden min-h-screen">
 						{children}
 					</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
