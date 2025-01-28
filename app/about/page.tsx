@@ -198,42 +198,42 @@ export default async function About() {
 						body="A modern, headless content management system for creating and managing content, advanced features like access control, localization and more."
 						icon={<MonitorCog size={32} color="hsl(var(--masonry-blue))"/>}
 						colour="hsl(var(--masonry-blue))"
-						cta={true}
+						cta={false}
 					/>
 					<FeatureGridItem
 						title="Next.js"
 						body="Used by some of the largest companies in the world, Next.js is a meta-framework for React which provides Server Side Rendering, Built-in Optimizations, and more."
 						icon={<Code2 size={32} color="hsl(var(--masonry-orange))"/>}
 						colour="hsl(var(--masonry-orange))"
-						cta={true}
+						cta={false}
 					/>
 					<FeatureGridItem
 						title="PostgreSQL"
 						body="A powerful, open-source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads."
 						icon={<FileJson2 size={32} color="hsl(var(--masonry-red))"/>}
 						colour="hsl(var(--masonry-red))"
-						cta={true}
+						cta={false}
 					/>
 					<FeatureGridItem
 						title="TailwindCSS"
 						body="A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
 						icon={<LayoutDashboard size={32} color="hsl(var(--masonry-orange))"/>}
 						colour="hsl(var(--masonry-orange))"
-						cta={true}
+						cta={false}
 					/>
 					<FeatureGridItem
 						title="Docker"
 						body="An open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly."
 						icon={<Container size={32} color="hsl(var(--masonry-red))"/>}
 						colour="hsl(var(--masonry-red))"
-						cta={true}
+						cta={false}
 					/>
 					<FeatureGridItem
 						title="Coolify"
 						body="An open-source, all-in-one, PaaS that enables us to host and manage your applications, databases and other services with ease."
 						icon={<Container size={32} color="hsl(var(--masonry-blue))"/>}
 						colour="hsl(var(--masonry-blue))"
-						cta={true}
+						cta={false}
 					/>
 				</div>
 			</section>
