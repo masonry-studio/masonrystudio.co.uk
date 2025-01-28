@@ -41,12 +41,12 @@ const Icons = {
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<g clip-path="url(#clip0_76_66)">
+			<g clipPath="url(#clip0_76_66)">
 				<path
 					d="M21.3436 24.1141L0.114751 3L0 14.0161L21.3436 35.4744L42.4577 14.0161V3L21.3436 24.1141Z"
 					fill="currentColor"
 					stroke="currentColor"
-					stroke-width="0.11512"
+					strokeWidth="0.11512"
 				/>
 				<path
 					d="M42.4414 25.6006L30.9663 37.0756L42.4414 37.0756V25.6006Z"
