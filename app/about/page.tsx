@@ -98,7 +98,7 @@ export default async function About() {
 
 			<section className="container my-24 max-w-[1400px]">
 				<h2 className="text-subheader mb-3">
-					Our Story<span className="text-[#0091ff]">.</span>
+					Our Story<span className="text-masonry-blue">.</span>
 				</h2>
 				<div className="flex flex-col gap-4 md:gap-2">
 					<p>
@@ -125,7 +125,7 @@ export default async function About() {
 
 			<section className="container my-24">
 				<h2 className="text-subheader text-center mb-8">
-					Our values<span className="text-[#FC6432]">.</span>
+					Our values<span className="text-masonry-orange">.</span>
 				</h2>
 
 				<div className="grid gap-6">
@@ -134,7 +134,7 @@ export default async function About() {
 						icon={
 							<CircleCheckBig
 								className="mt-1"
-								color="#FC6432"
+								color="hsl(var(--masonry-orange))"
 								size={24}
 							/>
 						}
@@ -147,7 +147,7 @@ export default async function About() {
 						icon={
 							<CircleCheckBig
 								className="mt-1"
-								color="#FC6432"
+								color="hsl(var(--masonry-orange))"
 								size={24}
 							/>
 						}
@@ -160,7 +160,7 @@ export default async function About() {
 						icon={
 							<CircleCheckBig
 								className="mt-1"
-								color="#FC6432"
+								color="hsl(var(--masonry-orange))"
 								size={24}
 							/>
 						}
@@ -173,7 +173,7 @@ export default async function About() {
 						icon={
 							<CircleCheckBig
 								className="mt-1"
-								color="#FC6432"
+								color="hsl(var(--masonry-orange))"
 								size={24}
 							/>
 						}
@@ -188,7 +188,7 @@ export default async function About() {
 				<div className="lg:w-16">
 					<h2 className="text-center mb-8 lg:mb-0 lg:-rotate-90 lg:flex lg:justify-center lg:translate-y-72 whitespace-nowrap text-4xl font-bold h-12">
 						Technology We Use
-						<span className="text-[#E5484D]">.</span>
+						<span className="text-masonry-red">.</span>
 					</h2>
 				</div>
 
@@ -196,43 +196,43 @@ export default async function About() {
 					<FeatureGridItem
 						title="Payload CMS"
 						body="A modern, headless content management system for creating and managing content, advanced features like access control, localization and more."
-						icon={<MonitorCog size={32} color="#0091FF"/>}
-						colour="#0091FF"
+						icon={<MonitorCog size={32} color="hsl(var(--masonry-blue))"/>}
+						colour="hsl(var(--masonry-blue))"
 						cta={true}
 					/>
 					<FeatureGridItem
 						title="Next.js"
 						body="Used by some of the largest companies in the world, Next.js is a meta-framework for React which provides Server Side Rendering, Built-in Optimizations, and more."
-						icon={<Code2 size={32} color="#FC6432"/>}
-						colour="#FC6432"
+						icon={<Code2 size={32} color="hsl(var(--masonry-orange))"/>}
+						colour="hsl(var(--masonry-orange))"
 						cta={true}
 					/>
 					<FeatureGridItem
 						title="PostgreSQL"
 						body="A powerful, open-source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads."
-						icon={<FileJson2 size={32} color="#E5484D"/>}
-						colour="#E5484D"
+						icon={<FileJson2 size={32} color="hsl(var(--masonry-red))"/>}
+						colour="hsl(var(--masonry-red))"
 						cta={true}
 					/>
 					<FeatureGridItem
 						title="TailwindCSS"
 						body="A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
-						icon={<LayoutDashboard size={32} color="#E5484D"/>}
-						colour="#E5484D"
+						icon={<LayoutDashboard size={32} color="hsl(var(--masonry-orange))"/>}
+						colour="hsl(var(--masonry-orange))"
 						cta={true}
 					/>
 					<FeatureGridItem
 						title="Docker"
 						body="An open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly."
-						icon={<Container size={32} color="#0091FF"/>}
-						colour="#0091FF"
+						icon={<Container size={32} color="hsl(var(--masonry-red))"/>}
+						colour="hsl(var(--masonry-red))"
 						cta={true}
 					/>
 					<FeatureGridItem
 						title="Coolify"
 						body="An open-source, all-in-one, PaaS that enables us to host and manage your applications, databases and other services with ease."
-						icon={<Container size={32} color="#FC6432"/>}
-						colour="#FC6432"
+						icon={<Container size={32} color="hsl(var(--masonry-blue))"/>}
+						colour="hsl(var(--masonry-blue))"
 						cta={true}
 					/>
 				</div>

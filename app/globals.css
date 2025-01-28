@@ -10,6 +10,10 @@
 
 @layer base {
 	:root {
+        --masonry-grey: 218, 11%, 65%;
+        --masonry-blue: 206, 100%, 50%;
+        --masonry-orange: 15, 97%, 59%;
+        --masonry-red: 358, 75%, 59%;
 		--background: 0 0% 100%;
 		--foreground: 0 0% 3.9%;
 		--card: 0 0% 100%;
@@ -38,6 +42,10 @@
 	}
 
 	.dark {
+        --masonry-grey: 218, 11%, 65%;
+        --masonry-blue: 206, 100%, 50%;
+        --masonry-orange: 15, 97%, 59%;
+        --masonry-red: 358, 75%, 59%;
 		--background: 0 0% 3.9%;
 		--foreground: 0 0% 98%;
 		--card: 0 0% 3.9%;

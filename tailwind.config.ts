@@ -37,6 +37,12 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			colors: {
+                masonry: {
+                    grey: 'hsl(var(--masonry-grey))',
+                    blue: 'hsl(var(--masonry-blue))',
+                    orange: 'hsl(var(--masonry-orange))',
+                    red: 'hsl(var(--masonry-red))'
+                },
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
