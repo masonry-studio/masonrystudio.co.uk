@@ -2,10 +2,26 @@ import Breadcrumb from "@/components/ui/breadcrumbs";
 import TextShimmer from "@/components/ui/text-shimmer";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon, Clock5, Mail } from "lucide-react";
-
+import config from "@/payload.config";
+import { getPayload } from "payload";
 
 
 export default async function Contact() {
+
+    const payload = await getPayload({config})
+
+    const result = await payload.find({
+        collection:'forms',
+        limit: 1,
+        where: {
+            title: {
+                equals: 'Contact Us'
+            }
+        }
+    })
+
+    console.log(result)
+
     return (
         <>
             <section className="container flex flex-col items-center justify-center w-full my-24 p-8">

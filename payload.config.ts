@@ -4,6 +4,7 @@ import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
+import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
@@ -30,5 +31,11 @@ export default buildConfig({
     },
   }),
   sharp,
-  plugins: [],
+  plugins: [
+    formBuilderPlugin({
+        fields: {
+            payment: false,
+          }
+      })
+  ],
 })
