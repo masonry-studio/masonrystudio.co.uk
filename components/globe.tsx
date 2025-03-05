@@ -55,10 +55,6 @@ export default function Globe() {
 				state.height = width * 2 * 0.4;
 			},
 		});
-		setTimeout(() => () => {
-			if (!canvasRef.current) return;
-			canvasRef.current.style.opacity = "1";
-		});
 		return () => {
 			globe.destroy();
 			window.removeEventListener("resize", onResize);
