@@ -73,7 +73,7 @@ export default function NavbarLinks() {
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
-				<NavigationMenuItem className="px-4">
+				<NavigationMenuItem>
 					<Link href="/about">
 						<Button variant="ghost">About</Button>
 					</Link>

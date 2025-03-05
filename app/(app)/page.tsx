@@ -68,7 +68,7 @@ function BespokeImage() {
 function BespokeContent() {
 	return (
 		<>
-			<div className="flex flex-col gap-6 items-start">
+			<div className="flex flex-col gap-6 items-start pl-12">
 				<div className="flex flex-col gap-2 items-start">
 					<h2 className="font-display font-bold text-4xl">
 						Bespoke<span className="text-orange-500">.</span>
@@ -98,9 +98,9 @@ function BespokeContent() {
 function HostingImage() {
 	return (
 		<>
-			{/* <div className=" w-full h-full"> */}
-			<Globe />
-			{/* </div> */}
+			<div className="h-full w-full relative">
+				<Globe />
+			</div>
 		</>
 	);
 }
