@@ -1,3 +1,4 @@
+import Globe from "@/components/globe";
 import { Button } from "@/components/ui/button";
 import TextShimmer from "@/components/ui/text-shimmer";
 import { ArrowRightIcon } from "lucide-react";
@@ -8,10 +9,10 @@ function StartupImage() {
 	return (
 		<>
 			<Image
-				src="https://placehold.co/600x400/000000/FFFFFF/png"
+				src="/home/start-ups.png"
 				alt="Placeholder"
-				width={600}
-				height={400}
+				width={1200}
+				height={800}
 				className="w-full"
 			/>
 		</>
@@ -54,10 +55,10 @@ function BespokeImage() {
 	return (
 		<>
 			<Image
-				src="https://placehold.co/600x400/000000/FFFFFF/png"
+				src="/home/bespoke.png"
 				alt="Placeholder"
-				width={600}
-				height={400}
+				width={1200}
+				height={800}
 				className="w-full"
 			/>
 		</>
@@ -97,13 +98,9 @@ function BespokeContent() {
 function HostingImage() {
 	return (
 		<>
-			<Image
-				src="https://placehold.co/600x400/000000/FFFFFF/png"
-				alt="Placeholder"
-				width={600}
-				height={400}
-				className="w-full"
-			/>
+			{/* <div className=" w-full h-full"> */}
+			<Globe />
+			{/* </div> */}
 		</>
 	);
 }
@@ -172,9 +169,9 @@ export default function Home() {
 					<HostingImage />
 				</div>
 				<div className="flex-col gap-0 max-w-32 w-full hidden xl:flex h-full items-center">
-					<div className="border rounded-full px-4 py-2 min-w-fit">
+					{/* <div className="border rounded-full px-4 py-2 min-w-fit">
 						<span>Here&apos;s what we offer</span>
-					</div>
+					</div> */}
 				</div>
 				<div className="flex flex-col gap-32 w-full">
 					<StartupContent />
