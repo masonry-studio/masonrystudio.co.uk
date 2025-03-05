@@ -66,7 +66,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<header className="animate-fade-in fixed left-0 top-0 z-50 w-full -translate-y-4 border-b opacity-0 bg-white dark:bg-neutral-950 [--animation-delay:600ms]">
+			<header className="animate-fade-in fixed left-0 top-0 z-50 w-full border-b bg-white dark:bg-neutral-950 opacity-0 [--animation-delay:600ms]">
 				<div className="container flex h-16 items-center justify-between">
 					<Link className="text-md flex items-center" href="/">
 						<Icons.Masonry className="w-8 h-8" />

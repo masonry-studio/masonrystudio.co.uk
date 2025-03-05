@@ -5,72 +5,6 @@ import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-function StartupImage() {
-	return <></>;
-}
-
-function StartupContent() {
-	return <></>;
-}
-
-function BespokeImage() {
-	return (
-		<>
-			<Image
-				src="/home/bespoke.png"
-				alt="Placeholder"
-				width={1200}
-				height={800}
-				className="w-full"
-			/>
-		</>
-	);
-}
-
-function BespokeContent() {
-	return (
-		<>
-			<div className="flex flex-col gap-6 items-start pl-0 lg:pl-12">
-				<div className="flex flex-col gap-2 items-start">
-					<h2 className="font-display font-bold text-4xl">
-						Bespoke<span className="text-orange-500">.</span>
-					</h2>
-					<p className="text-sans font-normal text-gray-400">
-						Get a bespoke website designed and built from scratch,
-						tailored to your startup&apos;s unique needs. Our team
-						works with you to create a custom site that reflects
-						your brand&apos;s vision and goals, ensuring a seamless
-						user experience and professional design.
-						<br />
-						<br />
-						Built with Next.js and a headless CMS, your site will be
-						fast, scalable, and easy to manage. Whether you need a
-						landing page or a full-scale platform, we deliver a
-						solution that&apos;s 100% unique to your business.
-					</p>
-				</div>
-				<Link href="/development/bespoke">
-					<Button>Learn More</Button>
-				</Link>
-			</div>
-		</>
-	);
-}
-
-function HostingImage() {
-	return (
-		<>
-			<div className="h-full w-full relative">
-				<Globe />
-			</div>
-		</>
-	);
-}
-
-function HostingContent() {
-	return <></>;
-}
-
 export default function Home() {
 	return (
 		<>
@@ -90,13 +24,13 @@ export default function Home() {
 					<br className="hidden md:block" /> deployment to create
 					beautiful and functional websites.
 				</p>
-				<div className="flex flex-row gap-4 items-center justify-center">
+				<div className="flex flex-row gap-4 items-center justify-center animate-fade-in [--animation-delay:400ms] -translate-y-4 opacity-0">
 					<Button>Contact Us</Button>
 					<Button variant="secondary">Learn More</Button>
 				</div>
 			</section>
 			<div className="flex flex-col gap-32 items-center max-w-[1400px] mx-auto">
-				<section className="flex flex-col gap-16 lg:gap-16 xl:gap-32 lg:flex-row px-4 justify-evenly">
+				<section className="flex flex-col gap-16 lg:gap-16 xl:gap-32 lg:flex-row px-4 justify-evenly animate-fade-in opacity-0 [--animation-delay:600ms]">
 					<div>
 						<Image
 							src="/home/start-ups.png"
@@ -135,7 +69,7 @@ export default function Home() {
 						</Link>
 					</div>
 				</section>
-				<section className="flex flex-col gap-16 lg:gap-16 xl:gap-32 lg:flex-row px-4 justify-evenly">
+				<section className="flex flex-col gap-16 lg:gap-16 xl:gap-32 lg:flex-row px-4 justify-evenly animate-fade-in opacity-0 [--animation-delay:700ms]">
 					<div className="block lg:hidden">
 						<Image
 							src="/home/bespoke.png"
@@ -145,7 +79,7 @@ export default function Home() {
 							className="w-full"
 						/>
 					</div>
-					<div className="flex flex-col gap-6 items-start pl-0 lg:pl-12">
+					<div className="flex flex-col gap-6 items-start">
 						<div className="flex flex-col gap-2 items-start">
 							<h2 className="font-display font-bold text-4xl">
 								Bespoke
@@ -181,7 +115,7 @@ export default function Home() {
 						/>
 					</div>
 				</section>
-				<section className="flex flex-col gap-8 sm:gap-16 xl:gap-32 lg:flex-row px-4 w-full lg:justify-between">
+				<section className="flex flex-col gap-8 sm:gap-16 xl:gap-32 lg:flex-row px-4 w-full lg:justify-between animate-fade-in opacity-0 [--animation-delay:800ms]">
 					<div className="lg:max-w-[400px] xl:max-w-[600px] w-full">
 						<Globe />
 					</div>
@@ -190,7 +124,7 @@ export default function Home() {
 							<h2 className="font-display font-bold text-4xl">
 								Hosting<span className="text-red-500">.</span>
 							</h2>
-							<p className="text-sans font-normal text-gray-400 w-full max-w-[1200px]">
+							<p className="text-sans font-normal text-gray-400 w-full">
 								Host your business website on our reliable,
 								high-performance platform, designed for speed
 								and scalability. Our hosting ensures fast load
