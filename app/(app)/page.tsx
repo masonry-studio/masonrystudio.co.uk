@@ -25,12 +25,16 @@ export default function Home() {
 					beautiful and functional websites.
 				</p>
 				<div className="flex flex-row gap-4 items-center justify-center animate-fade-in [--animation-delay:400ms] -translate-y-4 opacity-0">
-					<Button>Contact Us</Button>
-					<Button variant="secondary">Learn More</Button>
+					<Link href="/contact">
+						<Button>Contact Us</Button>
+					</Link>
+					<Link href="/about">
+						<Button variant="secondary">Learn More</Button>
+					</Link>
 				</div>
 			</section>
 			<div className="flex flex-col gap-32 items-center max-w-[1400px] mx-auto">
-				<section className="flex flex-col gap-16 lg:gap-16 xl:gap-32 lg:flex-row px-4 justify-evenly animate-fade-in opacity-0 [--animation-delay:600ms]">
+				<section className="grid grid-cols-1 gap-16 lg:gap-16 xl:gap-32 lg:grid-cols-2 px-4 justify-between animate-fade-in opacity-0 [--animation-delay:600ms]">
 					<div>
 						<Image
 							src="/home/start-ups.png"
@@ -40,7 +44,7 @@ export default function Home() {
 							className="w-full"
 						/>
 					</div>
-					<div className="flex flex-col gap-6 items-start">
+					<div className="flex flex-col gap-6 items-start w-full">
 						<div className="flex flex-col gap-2 items-start">
 							<h2 className="font-display font-bold text-4xl">
 								Start Up&apos;s
@@ -69,7 +73,7 @@ export default function Home() {
 						</Link>
 					</div>
 				</section>
-				<section className="flex flex-col gap-16 lg:gap-16 xl:gap-32 lg:flex-row px-4 justify-evenly animate-fade-in opacity-0 [--animation-delay:700ms]">
+				<section className="grid grid-cols-1 gap-16 lg:gap-16 xl:gap-32 lg:grid-cols-2 px-4 justify-between animate-fade-in opacity-0 [--animation-delay:700ms]">
 					<div className="block lg:hidden">
 						<Image
 							src="/home/bespoke.png"
@@ -79,7 +83,7 @@ export default function Home() {
 							className="w-full"
 						/>
 					</div>
-					<div className="flex flex-col gap-6 items-start">
+					<div className="flex flex-col gap-6 items-start lg:pl-10">
 						<div className="flex flex-col gap-2 items-start">
 							<h2 className="font-display font-bold text-4xl">
 								Bespoke

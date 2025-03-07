@@ -6,6 +6,12 @@ const nextConfig = {
 			{
 				hostname: "placehold.co",
 			},
+			{
+				hostname: "github.com",
+			},
+			{
+				hostname: "tygr.dev",
+			},
 		],
 	},
 };

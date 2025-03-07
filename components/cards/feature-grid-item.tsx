@@ -3,7 +3,7 @@ export default function FeatureGridItem({
 	body,
 	icon,
 	colour,
-	cta,
+	cta = true,
 }: {
 	title: string;
 	body: string;
