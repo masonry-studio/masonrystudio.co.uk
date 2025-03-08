@@ -45,7 +45,7 @@ export const sendContactMail = actionClient.schema(z.object({
 		to: "hello@masonrystudio.co.uk",
 		subject: "New Contact Form Submission",
 		html: body
-	}).then((res) => {
+	}).then(() => {
 		return { error: false, message: "Success! Your message has been sent." }
 	}).catch((err) => {
 		console.error("Error sending message: ", err);
