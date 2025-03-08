@@ -10,10 +10,12 @@ export default function Home() {
 		<>
 			<section className="relative mx-auto mt-40 max-w-7xl px-6 text-center md:px-8 pb-24">
 				<div className="backdrop-filter-[12px] animate-fade-in group inline-flex h-7 -translate-y-4 items-center justify-between gap-1 rounded-full border dark:border-white/5 bg-black/5 dark:bg-white/10 px-3 text-xs text-white opacity-0 transition-all ease-in hover:cursor-pointer hover:bg-black/10 dark:hover:bg-white/15 dark:text-black">
-					<TextShimmer className="inline-flex items-center justify-center">
-						<span>Introducing Masonry Studio</span>{" "}
-						<ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-					</TextShimmer>
+					<Link href="/about">
+						<TextShimmer className="inline-flex items-center justify-center">
+							<span>Introducing Masonry Studio</span>{" "}
+							<ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+						</TextShimmer>
+					</Link>
 				</div>
 				<h1 className="animate-fade-in -translate-y-4 text-balance bg-linear-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-bold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-white/40">
 					Design, Develop, Deploy
@@ -109,7 +111,7 @@ export default function Home() {
 							<Button>Learn More</Button>
 						</Link>
 					</div>
-					<div className="hidden lg:block">
+					<div className="hidden lg:block border rounded-xl">
 						<Image
 							src="/home/bespoke.png"
 							alt="Placeholder"
@@ -120,7 +122,7 @@ export default function Home() {
 					</div>
 				</section>
 				<section className="flex flex-col gap-8 sm:gap-16 xl:gap-32 lg:flex-row px-4 w-full lg:justify-between animate-fade-in opacity-0 [--animation-delay:800ms]">
-					<div className="lg:max-w-[400px] xl:max-w-[600px] w-full">
+					<div className="lg:max-w-[400px] xl:max-w-[600px] w-full border rounded-xl	">
 						<Globe />
 					</div>
 					<div className="flex flex-col gap-6 items-start w-full">
