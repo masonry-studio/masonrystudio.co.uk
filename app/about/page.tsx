@@ -65,7 +65,7 @@ export default async function About() {
 
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
 				<div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
-					<div>
+					<div className="w-full">
 						<h1 className="text-header">About Us</h1>
 						<Breadcrumb />
 					</div>

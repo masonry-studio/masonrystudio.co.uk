@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import ResponsiveToaster from "@/components/responsive-toaster";
 import { Inter, JetBrains_Mono, Sora } from "next/font/google";
-
-import "./globals.css";
-import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme/provider";
-import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import type { Metadata } from "next";
+
+import { cn } from "@/lib/utils";
+import "./globals.css";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
+			<meta name="apple-mobile-web-app-title" content="Masonry" />
 			<body
 				className={cn(
 					inter.variable,
@@ -56,6 +58,7 @@ export default function RootLayout({
 						{children}
 					</main>
 					<Footer />
+					<ResponsiveToaster />
 				</ThemeProvider>
 			</body>
 		</html>
