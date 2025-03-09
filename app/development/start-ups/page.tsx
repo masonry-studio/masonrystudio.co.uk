@@ -1,12 +1,10 @@
 'use client'
+
 import Image from "next/image"
 import Link from "next/link"
-
 import { ArrowRightIcon, TableOfContents } from "lucide-react"
-
 import Breadcrumb from "@/components/ui/breadcrumbs"
 import { TracingBeam } from "@/components/ui/tracing-beam"
-
 import darkImg from "@/public/about/banner-dark.png"
 import lightImg from "@/public/about/banner-light.png"
 import FeatureGridItem from "@/components/cards/feature-grid-item"
@@ -52,7 +50,6 @@ export default function StartUps() {
                     </clipPath>
                 </defs>
             </svg>
-
             <section className="container flex flex-row w-full my-24 p-8">
                 <div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
                     <div>
@@ -85,14 +82,12 @@ export default function StartUps() {
                 <p>At <span className="text-primary">Masonry Studio</span>, we provide small businesses with high-quality, fully responsive websites built using the exact same modern technologies we use on our bespoke builds.</p>
                 <p>Our service utilizes a flexible templated block system, offering a solid foundation that not only meets your current needs but also serves as a stepping stone toward a fully bespoke website. Using modern technologies, we enable step-by-step development that allows your site to grow alongside your business. As your needs evolve, we can seamlessly transition your site to a custom solution tailored specifically to your unique vision, ensuring a powerful online presence now and into the future.</p>
             </section>
-
             <section className="container flex flex-col my-24">
                 <div>
                     <h2 className="text-subheader text-center mb-3">
                         Out The Box Features<span className="text-masonry-blue">.</span>
                     </h2>
                 </div>
-
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <FeatureGridItem
                         title="Bespoke CMS"
@@ -138,17 +133,11 @@ export default function StartUps() {
                     />
                 </div>
             </section>
-
-
             <section className="container flex flex-col my-24">
-
                 <h2 className="text-subheader text-center mb-3">
                     Our Process<span className="text-masonry-orange">.</span>
                 </h2>
-
-
-
-                <TracingBeam>
+                <TracingBeam >
                     <div className="flex flex-col gap-8 ml-12 md:ml-0">
                         <div className="flex flex-col gap-2">
                             <h3 className="text-subheader">Discovery</h3>
@@ -169,22 +158,16 @@ export default function StartUps() {
                     </div>
                 </TracingBeam>
             </section>
-
             <section className="container">
-
                 <h2 className="text-subheader mb-8">
                     Whats Included<span className="text-masonry-red">.</span>
                 </h2>
-
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-4">
                     <Price title="Basic" desc="some text about the package" price={500} priceMethod="One off payment" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
                     <Price title="Bolt on 1" desc="some text about the package" price={500} priceMethod="month" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
                     <Price title="Bolt on 2" desc="some text about the package" price={500} priceMethod="month" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
                     <Price title="Bolt on 3" desc="some text about the package" price={500} priceMethod="month" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
-
                 </div>
-
-
             </section>
         </>
     )

@@ -3,6 +3,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
 export default function Breadcrumbs() {
 	const pathname = usePathname();
@@ -15,25 +16,24 @@ export default function Breadcrumbs() {
 				<li className="text-masonry-grey list-none hover:text-black dark:hover:text-white transition-colors">
 					<Link href="/">Home</Link>
 				</li>
-				<li className="text-masonry-grey list-none">
-					<h4><ChevronRight size={18}/></h4>
-				</li>
 				{breadcrumbs.map((item, index) => {
-					const href =
-						"/" + breadcrumbs.slice(0, index + 1).join("/");
+					const path = breadcrumbs.slice(0, index + 1).join("/");
+					const name = item.charAt(0).toUpperCase() + item.slice(1);
 					return (
-                            <li
-                                key={index}
-                                className="text-masonry-grey last-of-type:text-primary list-none hover:text-black dark:hover:text-white transition-colors flex flex-row items-center"
-                            >
-                                <Link className="capitalize" href={href}>
-                                    {item}
-                                </Link>
-                                
-                            {index < breadcrumbs.length - 1 && (
-                                <span className="text-masonry-grey pl-2"> <ChevronRight size={18} /> </span>
-                            )}
-                            </li>
+						<React.Fragment key={index}>
+							<li className="text-[#9CA5AF] list-none">
+								<h4><ChevronRight size={18} /></h4>
+							</li>
+							{index === breadcrumbs.length - 1 ? (
+								<li key={index} className="text-masonry-grey list-none hover:text-black dark:hover:text-white transition-colors">
+									<Link href={`/${path}`}>{name.split("-").map((v) => `${v.slice(0, 1).toUpperCase()}${v.slice(1)} `)}</Link>
+								</li>
+							) : (
+								<li key={index} className="text-masonry-grey list-none">
+									{name}
+								</li>
+							)}
+						</React.Fragment>
 					);
 				})}
 			</ul>
