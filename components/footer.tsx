@@ -10,9 +10,9 @@ export default function Footer() {
 			<div className="flex flex-col border-t mt-12">
 				<div className="flex flex-col md:flex-row gap-8 w-full justify-between p-4 sm:p-6 md:p-8">
 					<div className="flex flex-col gap-4 md:w-full">
-                        <Link href='/'>
-						    <Icons.MasonryTitle />
-                        </Link>
+						<Link href='/'>
+							<Icons.MasonryTitle />
+						</Link>
 						<div className="gap-2 flex flex-col">
 							<p>
 								Email:{" "}

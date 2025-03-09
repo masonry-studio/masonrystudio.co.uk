@@ -17,6 +17,7 @@ export default function Globe() {
 			precision: 0.001,
 		},
 	}));
+
 	useEffect(() => {
 		let phi = 0;
 		let width = 0;
@@ -59,7 +60,8 @@ export default function Globe() {
 			globe.destroy();
 			window.removeEventListener("resize", onResize);
 		};
-	}, []);
+	}, [r]);
+
 	return (
 		<div
 			style={{

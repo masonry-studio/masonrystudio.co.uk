@@ -13,12 +13,12 @@ import FeatureGridItem from "@/components/cards/feature-grid-item";
 import Icons from "@/components/icons";
 
 const faq = [
-	{ id: 1, title: "test 1", content: ["test 1"] },
-	{ id: 2, title: "test 2", content: ["test 2"] },
+	{ id: 1, title: "How can I contact a specific member in the team?", content: ["Please find our specific contact details below:", "‎", "Ty Mason: ty.mason@masonrystudio.co.uk", "Andrew Mason: andrew.mason@masonrystudio.co.uk"] },
+	{ id: 2, title: "What are your buisness hours?", content: ["We are open from Monday to Friday between 9am to 5pm. We may be able to respond to any messages over the weekend but it isn't guaranteed."] },
 	{
 		id: 3,
-		title: "test 3",
-		content: ["test 3 content 1", "test 3 content 2"],
+		title: "Got any other questions?",
+		content: ["You can contact us directly via our contact page, or by emailing us at hello@masonrystudio.co.uk"],
 	},
 ];
 
@@ -65,7 +65,7 @@ export default async function About() {
 
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
 				<div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
-					<div>
+					<div className="w-full">
 						<h1 className="text-header">About Us</h1>
 						<Breadcrumb />
 					</div>
