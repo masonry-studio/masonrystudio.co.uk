@@ -135,7 +135,7 @@ export default function StartUps() {
             </section>
             <section className="container flex flex-col my-24">
                 <h2 className="text-subheader text-center mb-3">
-                    Our Process<span className="text-masonry-orange">.</span>
+                    Our Process<span className="text-masonry-red">.</span>
                 </h2>
                 <TracingBeam >
                     <div className="flex flex-col gap-8 ml-12 md:ml-0">
@@ -160,7 +160,7 @@ export default function StartUps() {
             </section>
             <section className="container">
                 <h2 className="text-subheader mb-8">
-                    Whats Included<span className="text-masonry-red">.</span>
+                    Whats Included<span className="text-masonry-orange">.</span>
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-4">
                     <Price title="Basic" desc="some text about the package" price={500} priceMethod="One off payment" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
