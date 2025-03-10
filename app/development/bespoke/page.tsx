@@ -12,6 +12,17 @@ import lightImg from "@/public/about/banner-light.png"
 import FeatureGridItem from "@/components/cards/feature-grid-item"
 import Price from "@/components/cards/price"
 import ChecklistItem from "@/components/cards/checklist-item"
+import Faqs from "@/components/faqs"
+
+const faq = [
+	{ id: 1, title: "How can I contact a specific member in the team?", content: ["Please find our specific contact details below:", "‎", "Ty Mason: ty.mason@masonrystudio.co.uk", "Andrew Mason: andrew.mason@masonrystudio.co.uk"] },
+	{ id: 2, title: "What are your buisness hours?", content: ["We are open from Monday to Friday between 9am to 5pm. We may be able to respond to any messages over the weekend but it isn't guaranteed."] },
+	{
+		id: 3,
+		title: "Got any other questions?",
+		content: ["You can contact us directly via our contact page, or by emailing us at hello@masonrystudio.co.uk"],
+	},
+];
 
 export default function Bespoke() {
     return (
@@ -98,61 +109,61 @@ export default function Bespoke() {
             </section>
 
             <section className="container my-24 animate-fade-in opacity-0 [--animation-delay:400ms]">
-				<h2 className="text-center mb-8 text-4xl font-bold">
-                Why Choose A Bespoke Build<span className="text-masonry-orange">.</span>
-				</h2>
+                <h2 className="text-center mb-8 text-4xl font-bold">
+                    Why Choose A Bespoke Build<span className="text-masonry-orange">.</span>
+                </h2>
 
-				<div className="grid gap-6">
-					<ChecklistItem
-						id={1}
-						icon={
-							<CircleCheckBig
-								className="mt-1 text-masonry-orange"
-								size={24}
-							/>
-						}
-						colour="#FC6432"
-						title="User Experience"
-						body="We believe that the best results come from staying ahead of the curve. By using the latest technologies like Next.js and Payload CMS, we create modern, efficient websites that offer more flexibility, speed, and scalability than traditional solutions."
-					/>
-					<ChecklistItem
-						id={2}
-						icon={
-							<CircleCheckBig
-								className="mt-1 text-masonry-orange"
-								size={24}
-							/>
-						}
-						colour="#FC6432"
-						title="Faster Site"
-						body="We’re dedicated to crafting each project with precision and care. We limit the number of clients we work with at any given time to ensure we can focus on quality and deliver the best possible results for every client."
-					/>
-					<ChecklistItem
-						id={3}
-						icon={
-							<CircleCheckBig
-								className="mt-1 text-masonry-orange"
-								size={24}
-							/>
-						}
-						colour="#FC6432"
-						title="Website Security"
-						body="We don’t believe in one-size-fits-all solutions. Every business is unique, and so are its needs. Our process starts by understanding each client’s goals and challenges so we can build a solution that truly serves their vision and drives growth."
-					/>
-					<ChecklistItem
-						id={4}
-						icon={
-							<CircleCheckBig
-								className="mt-1 text-masonry-orange"
-								size={24}
-							/>
-						}
-						colour="#FC6432"
-						title="Website Uptime"
-						body="We see our clients as partners, and we believe great partnerships are built on trust. That’s why we’re open and transparent about our process, timelines, and costs. With us, clients always know what’s happening, when, and why."
-					/>
-				</div>
-			</section>
+                <div className="grid gap-6">
+                    <ChecklistItem
+                        id={1}
+                        icon={
+                            <CircleCheckBig
+                                className="mt-1 text-masonry-orange"
+                                size={24}
+                            />
+                        }
+                        colour="#FC6432"
+                        title="User Experience"
+                        body="We believe that the best results come from staying ahead of the curve. By using the latest technologies like Next.js and Payload CMS, we create modern, efficient websites that offer more flexibility, speed, and scalability than traditional solutions."
+                    />
+                    <ChecklistItem
+                        id={2}
+                        icon={
+                            <CircleCheckBig
+                                className="mt-1 text-masonry-orange"
+                                size={24}
+                            />
+                        }
+                        colour="#FC6432"
+                        title="Faster Site"
+                        body="We’re dedicated to crafting each project with precision and care. We limit the number of clients we work with at any given time to ensure we can focus on quality and deliver the best possible results for every client."
+                    />
+                    <ChecklistItem
+                        id={3}
+                        icon={
+                            <CircleCheckBig
+                                className="mt-1 text-masonry-orange"
+                                size={24}
+                            />
+                        }
+                        colour="#FC6432"
+                        title="Website Security"
+                        body="We don’t believe in one-size-fits-all solutions. Every business is unique, and so are its needs. Our process starts by understanding each client’s goals and challenges so we can build a solution that truly serves their vision and drives growth."
+                    />
+                    <ChecklistItem
+                        id={4}
+                        icon={
+                            <CircleCheckBig
+                                className="mt-1 text-masonry-orange"
+                                size={24}
+                            />
+                        }
+                        colour="#FC6432"
+                        title="Website Uptime"
+                        body="We see our clients as partners, and we believe great partnerships are built on trust. That’s why we’re open and transparent about our process, timelines, and costs. With us, clients always know what’s happening, when, and why."
+                    />
+                </div>
+            </section>
 
             <section className="container flex flex-col my-24">
                 <div>
@@ -238,7 +249,7 @@ export default function Bespoke() {
                 </TracingBeam>
             </section>
 
-            <section className="container">
+            <section className="container hidden">
 
                 <h2 className="text-subheader mb-8">
                     Whats Included<span className="text-masonry-orange">.</span>
@@ -253,6 +264,13 @@ export default function Bespoke() {
                 </div>
 
 
+            </section>
+
+            <section className="container flex flex-col px-8 my-24 animate-fade-in opacity-0 [--animation-delay:600ms]">
+                <h2 className="text-subheader text-center mb-8 text-for">
+                    FAQS
+                </h2>
+                <Faqs data={faq} />
             </section>
         </>
     )

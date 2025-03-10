@@ -9,6 +9,17 @@ import darkImg from "@/public/about/banner-dark.png"
 import lightImg from "@/public/about/banner-light.png"
 import FeatureGridItem from "@/components/cards/feature-grid-item"
 import Price from "@/components/cards/price"
+import Faqs from "@/components/faqs"
+
+const faq = [
+	{ id: 1, title: "How can I contact a specific member in the team?", content: ["Please find our specific contact details below:", "‎", "Ty Mason: ty.mason@masonrystudio.co.uk", "Andrew Mason: andrew.mason@masonrystudio.co.uk"] },
+	{ id: 2, title: "What are your buisness hours?", content: ["We are open from Monday to Friday between 9am to 5pm. We may be able to respond to any messages over the weekend but it isn't guaranteed."] },
+	{
+		id: 3,
+		title: "Got any other questions?",
+		content: ["You can contact us directly via our contact page, or by emailing us at hello@masonrystudio.co.uk"],
+	},
+];
 
 export default function StartUps() {
     return (
@@ -158,7 +169,7 @@ export default function StartUps() {
                     </div>
                 </TracingBeam>
             </section>
-            <section className="container">
+            <section className="container hidden">
                 <h2 className="text-subheader mb-8">
                     Whats Included<span className="text-masonry-orange">.</span>
                 </h2>
@@ -168,6 +179,13 @@ export default function StartUps() {
                     <Price title="Bolt on 2" desc="some text about the package" price={500} priceMethod="month" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
                     <Price title="Bolt on 3" desc="some text about the package" price={500} priceMethod="month" features={["Custom Domain", "Hosting", "SSL Certificate", "SEO Optimisation", "24/7 Support"]} />
                 </div>
+            </section>
+
+            <section className="container flex flex-col px-8 my-24 animate-fade-in opacity-0 [--animation-delay:600ms]">
+                <h2 className="text-subheader text-center mb-8 text-for">
+                    FAQS
+                </h2>
+                <Faqs data={faq} />
             </section>
         </>
     )
