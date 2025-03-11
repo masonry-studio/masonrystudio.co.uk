@@ -4,11 +4,10 @@ import { ThemeProvider } from "@/components/theme/provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import { cn } from "@/lib/utils";
 import "./globals.css";
-import Script from "next/script";
-import Head from "next/head";
 
 const inter = Inter({
 	subsets: ["latin"],
