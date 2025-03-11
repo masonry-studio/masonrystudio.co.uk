@@ -24,7 +24,7 @@ const nextConfig = {
 };
 
 const ContentSecurityPolicy = `
-    default-src 'self';
+    default-src 'self' analytics.masonrystudio.co.uk;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' analytics.masonrystudio.co.uk;
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
