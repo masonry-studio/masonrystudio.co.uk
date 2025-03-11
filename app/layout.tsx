@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import Script from "next/script";
+import Head from "next/head";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -39,12 +40,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<head>
-				<meta name="apple-mobile-web-app-title" content="Masonry" />
-				{process.env.NODE_ENV === "production" && (
-					<Script defer data-domain="masonrystudio.co.uk" src="https://analytics.masonrystudio.co.uk/js/script.js" />
-				)}
-			</head>
+			<Script defer data-domain="masonrystudio.co.uk" src="https://analytics.masonrystudio.co.uk/js/script.outbound-links.js" />
 			<body
 				className={cn(
 					inter.variable,
@@ -53,6 +49,7 @@ export default function RootLayout({
 					"bg-background min-h-screen font-sans antialiased"
 				)}
 			>
+
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
