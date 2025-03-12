@@ -11,7 +11,7 @@
 </g>
 <path d="M46 1259H686V1257H46V1259ZM686 1299H46V1301H686V1299Z" fill="white" fill-opacity="0.1" mask="url(#path-4-inside-1_455_388)"/>
 </g>
-<g clip-path="url(#clip0_455_388)">
+<g clipPath="url(#clip0_455_388)">
 <rect x="59" y="1270" width="20" height="20" rx="2" fill="#171717"/>
 <rect x="59.5" y="1270.5" width="19" height="19" rx="1.5" stroke="white" stroke-opacity="0.1"/>
 <rect x="92" y="1270" width="20" height="20" rx="2" fill="#171717"/>
@@ -795,7 +795,7 @@
 </g>
 <path d="M46 72H686V70H46V72ZM686 112H46V114H686V112Z" fill="white" fill-opacity="0.1" mask="url(#path-730-inside-9_455_388)"/>
 </g>
-<g clip-path="url(#clip1_455_388)">
+<g clipPath="url(#clip1_455_388)">
 <rect x="59" y="83" width="20" height="20" rx="2" fill="#171717"/>
 <rect x="59.5" y="83.5" width="19" height="19" rx="1.5" stroke="white" stroke-opacity="0.1"/>
 <rect x="92" y="83" width="20" height="20" rx="2" fill="#171717"/>

@@ -1,4 +1,3 @@
-import ServerRack from "@/components/icons/server-rack";
 import Breadcrumbs from "@/components/ui/breadcrumbs";
 import { FlipWords } from "@/components/ui/flip-words";
 import { ArrowRightIcon, CheckCircle2Icon, GitCommitIcon, TriangleAlert } from "lucide-react";
@@ -49,7 +48,7 @@ export default function OurPlatformPage() {
 				</defs>
 			</svg>
 
-			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
+			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:300ms]">
 				<div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
 					<div className="w-full">
 						<h1 className="text-header">Our Platform</h1>
@@ -63,7 +62,7 @@ export default function OurPlatformPage() {
 					</Link>
 				</div>
 			</section>
-			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
+			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:400ms]">
 				<div className="flex flex-row gap-24 items-center w-full rounded-xl">
 					<div className="flex flex-col gap-4 w-full h-full">
 						<div className="text-2xl sm:text-3xl md:text-4xl font-bold font-display whitespace-nowrap">
@@ -75,7 +74,7 @@ export default function OurPlatformPage() {
 							performance, security, or scalability. In the event one of our servers goes down, your site will automatically
 							failover to another server, ensuring your site is always online.
 							<br /><br />
-							Getting big? Great! You're in good hands. Our platform is designed to scale with you, so you can focus on growing your business
+							Getting big? Great! You&apos;re in good hands. Our platform is designed to scale with you, so you can focus on growing your business
 							without the headache of managing your infrastructure.
 						</p>
 					</div>
@@ -85,13 +84,13 @@ export default function OurPlatformPage() {
 					</div>
 				</div>
 			</section>
-			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
+			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:500ms]">
 				<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-16 md:gap-12 lg:gap-16">
 					<div className="gap-8 flex flex-col items-start">
 						<div className="flex flex-col gap-4 items-start">
 							<h1 className="text-subheader font-display">From localhost to https, <br /> in seconds</h1>
 							<p className="text-masonry-grey">
-								Using Git, we can push a new update to your site and have the changed applied to production in seconds. Don't fret! Your site will never go down during this process.
+								Using Git, we can push a new update to your site and have the changed applied to production in seconds. Don&apos;t fret! Your site will never go down during this process.
 							</p>
 						</div>
 						<div className="flex flex-col gap-4 items-center sm:items-start w-full h-full md:p-4">
@@ -129,7 +128,7 @@ export default function OurPlatformPage() {
 					</div>
 					<div className="gap-8 flex flex-col items-start">
 						<div className="flex flex-col gap-4 items-start">
-							<h1 className="text-subheader font-display">Something break? <br /> Don't Sweat.</h1>
+							<h1 className="text-subheader font-display">Something break? <br /> Don&apos;t Sweat.</h1>
 							<p className="text-masonry-grey">
 								In the event we screw something up, we can easily rollback your site, store or platform to an earlier version with zero downtime. Go ahead, ship on a Friday.
 							</p>
@@ -152,21 +151,21 @@ export default function OurPlatformPage() {
 								<CheckCircle2Icon size={24} />
 							</div>
 							<svg width="117" height="152" viewBox="0 0 117 152" fill="none" xmlns="http://www.w3.org/2000/svg" className="self-center">
-								<g clip-path="url(#clip0_461_505)">
-									<path d="M4 4V60C4 66.6274 9.37259 72 16 72H104C110.627 72 116 77.3726 116 84V152" stroke="url(#paint0_linear_461_505)" stroke-width="2" />
-									<path d="M4 4V60C4 66.6274 9.37259 72 16 72H104C110.627 72 116 77.3726 116 84V152" stroke="url(#paint1_linear_461_505)" stroke-width="2" />
+								<g clipPath="url(#clip0_461_505)">
+									<path d="M4 4V60C4 66.6274 9.37259 72 16 72H104C110.627 72 116 77.3726 116 84V152" stroke="url(#paint0_linear_461_505)" strokeWidth="2" />
+									<path d="M4 4V60C4 66.6274 9.37259 72 16 72H104C110.627 72 116 77.3726 116 84V152" stroke="url(#paint1_linear_461_505)" strokeWidth="2" />
 									<mask id="mask0_461_505" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="8" height="8">
 										<path d="M8 0H0V8H8V0Z" fill="white" />
 									</mask>
 									<g mask="url(#mask0_461_505)">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0.5L8 7.5H0L4 0.5Z" fill="#0091FF" />
+										<path fillRule="evenodd" clipRule="evenodd" d="M4 0.5L8 7.5H0L4 0.5Z" fill="#0091FF" />
 									</g>
 								</g>
 								<defs>
 									<linearGradient id="paint0_linear_461_505" x1="116" y1="72" x2="4.00001" y2="72" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#E5484D" />
-										<stop offset="0.5" stop-color="#FC6432" />
-										<stop offset="1" stop-color="#0091FF" />
+										<stop stopColor="#E5484D" />
+										<stop offset="0.5" stopColor="#FC6432" />
+										<stop offset="1" stopColor="#0091FF" />
 									</linearGradient>
 									<clipPath id="clip0_461_505">
 										<rect width="117" height="152" fill="white" />
@@ -193,6 +192,9 @@ export default function OurPlatformPage() {
 						</div>
 					</div>
 				</div>
+			</section>
+			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:600ms]">
+
 			</section>
 		</>
 	)
