@@ -37,15 +37,13 @@ export default function Home() {
 			</section>
 			<div className="flex flex-col gap-32 items-center max-w-[1400px] mx-auto">
 				<section className="grid grid-cols-1 gap-16 lg:gap-16 xl:gap-32 lg:grid-cols-2 px-4 justify-between animate-fade-in opacity-0 [--animation-delay:600ms]">
-					<div>
-						<Image
-							src="/home/start-ups.png"
-							alt="Placeholder"
-							width={1200}
-							height={800}
-							className="w-full"
-						/>
-					</div>
+					<Image
+						src="/home/start-ups.png"
+						alt="Placeholder"
+						width={1200}
+						height={800}
+						className="w-full relative"
+					/>
 					<div className="flex flex-col gap-6 items-start w-full">
 						<div className="flex flex-col gap-2 items-start">
 							<h2 className="font-display font-bold text-4xl">
@@ -74,7 +72,7 @@ export default function Home() {
 							<Button>Learn More</Button>
 						</Link>
 					</div>
-				</section>
+				</section >
 				<section className="grid grid-cols-1 gap-16 lg:gap-16 xl:gap-32 lg:grid-cols-2 px-4 justify-between animate-fade-in opacity-0 [--animation-delay:700ms]">
 					<div className="block lg:hidden">
 						<Image
@@ -111,7 +109,7 @@ export default function Home() {
 							<Button>Learn More</Button>
 						</Link>
 					</div>
-					<div className="hidden lg:block border rounded-xl">
+					<div className="hidden lg:block">
 						<Image
 							src="/home/bespoke.png"
 							alt="Placeholder"
@@ -122,7 +120,7 @@ export default function Home() {
 					</div>
 				</section>
 				<section className="flex flex-col gap-8 sm:gap-16 xl:gap-32 lg:flex-row px-4 w-full lg:justify-between animate-fade-in opacity-0 [--animation-delay:800ms]">
-					<div className="lg:max-w-[400px] xl:max-w-[600px] w-full border rounded-xl	">
+					<div className="lg:max-w-[400px] xl:max-w-[600px] w-full">
 						<Globe />
 					</div>
 					<div className="flex flex-col gap-6 items-start w-full">
@@ -152,7 +150,7 @@ export default function Home() {
 						</Link>
 					</div>
 				</section>
-			</div>
+			</div >
 		</>
 	);
 }

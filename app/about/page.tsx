@@ -1,5 +1,3 @@
-import lightImg from "@/public/about/banner-light.png";
-import darkImg from "@/public/about/banner-dark.png";
 import {
 	ArrowRightIcon,
 	CircleCheckBig,
@@ -69,26 +67,12 @@ export default async function About() {
 						<h1 className="text-header">About Us</h1>
 						<Breadcrumb />
 					</div>
-					<p className="pb-4 md:max-w-2/3 text-neutral-500 dark:text-neutral-400">Hello, world! We are Masonry Studio, a new, upcoming, family-duo owned web agency providing services from small start-ups, to large enterprises.</p>
+					<p className="pb-4 md:max-w-1/2 text-neutral-500 dark:text-neutral-400">Hello, world! We are Masonry Studio, a new, upcoming, family-duo owned web agency providing services from small start-ups, to large enterprises.</p>
 					<Link href="/contact">
 						<button className="my-auto backdrop-filter-[12px] group flex flex-row items-center gap-1 h-7 rounded-full border dark:border-white/5 dark:text-white text-black bg-black/5 dark:bg-white/20 px-3 text-xs hover:cursor-pointer hover:bg-black/10 dark:hover:bg-white/15">
 							Get in touch <ArrowRightIcon size={14} />
 						</button>
 					</Link>
-				</div>
-				<div className=" flex-col max-w-[600px] hidden md:flex">
-					<Image
-						className="my-auto dark:block hidden"
-						src={darkImg}
-						alt="Tech Stack"
-						priority
-					/>
-					<Image
-						className="my-auto dark:hidden"
-						src={lightImg}
-						alt="Tech Stack"
-						priority
-					/>
 				</div>
 			</section>
 
@@ -131,7 +115,6 @@ export default async function About() {
 				<h2 className="text-center mb-8 text-4xl font-bold">
 					Our values<span className="text-masonry-orange">.</span>
 				</h2>
-
 				<div className="grid gap-6">
 					<ChecklistItem
 						id={1}
@@ -192,16 +175,16 @@ export default async function About() {
 
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 					<FeatureGridItem
-						title="Payload CMS"
-						body="A modern, headless content management system for creating and managing content, advanced features like access control, localization and more."
-						icon={<Icons.Payload className="size-8" />}
+						title="Next.js"
+						body="Used by some of the largest companies in the world, Next.js is a meta-framework for React which provides Server Side Rendering, Built-in Optimizations, and more."
+						icon={<Icons.NextJS className="size-8" />}
 						colour="var(--masonry-blue)"
 						cta={false}
 					/>
 					<FeatureGridItem
-						title="Next.js"
-						body="Used by some of the largest companies in the world, Next.js is a meta-framework for React which provides Server Side Rendering, Built-in Optimizations, and more."
-						icon={<Icons.NextJS className="size-8" />}
+						title="Payload CMS"
+						body="A modern, headless content management system for creating and managing content, advanced features like access control, localization and more."
+						icon={<Icons.Payload className="size-8" />}
 						colour="var(--masonry-orange)"
 						cta={false}
 					/>
