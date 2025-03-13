@@ -120,6 +120,7 @@
 	--color-chart-5: var(--chart-5);
 
 	--spacing-screen-no-nav: calc(100vh - 69px);
+	--breakpoint-xs: 375px;
 
 	--animate-accordion-down: accordion-down 0.2s ease-out;
 	--animate-accordion-up: accordion-up 0.2s ease-out;
@@ -192,6 +193,9 @@
 	@media (width >= 1400px) {
 		max-width: 1400px;
 	}
+	@media (width >= 375px) {
+		max-width: 1400px;
+	}
 }
 
 /*
@@ -225,7 +229,7 @@
 }
 
 @utility text-subheader {
-	@apply text-3xl md:text-4xl font-bold;
+	@apply text-2xl sm:text-3xl md:text-4xl font-bold;
 }
 
 @utility text-subheader-2 {
