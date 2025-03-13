@@ -1,12 +1,9 @@
 import { AnimatedBackup } from "@/app/hosting/our-platform/backup";
-import { AnimatedBeam } from "@/components/ui/animated-beam";
 import Breadcrumbs from "@/components/ui/breadcrumbs";
 import { FlipWords } from "@/components/ui/flip-words";
-import { cn } from "@/lib/utils";
 import { ArrowRightIcon, Bot, CheckCircle2Icon, GitCommitIcon, MoreHorizontal, TriangleAlert } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { forwardRef, useRef } from "react";
 
 export default function OurPlatformPage() {
 	const deploymentWords = ["website,", "store,", "platform,", "idea,", "business,"];
@@ -202,7 +199,7 @@ export default function OurPlatformPage() {
 					<div className="flex flex-col gap-4 items-start">
 						<h1 className="text-subheader font-display">Take a peek into the future</h1>
 						<p className="text-masonry-grey">
-							While working on a new feature, our platform automatically spins up a preview deployment of your site, store or platform so you can see what we're cooking up before it goes live.
+							While working on a new feature, our platform automatically spins up a preview deployment of your site, store or platform so you can see what we&apos;re cooking up before it goes live.
 						</p>
 						<div className="w-full flex flex-col h-full items-start justify-center">
 							<div className="flex flex-row gap-3 items-start w-full pl-3">

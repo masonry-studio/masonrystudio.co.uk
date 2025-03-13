@@ -3,7 +3,7 @@
 import Icons from "@/components/icons";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
 import { cn } from "@/lib/utils";
-import { Archive, Code, ContainerIcon, Database, DatabaseBackup, Package } from "lucide-react";
+import { DatabaseBackup } from "lucide-react";
 import { forwardRef, useRef } from "react";
 
 const Circle = forwardRef<
@@ -14,7 +14,7 @@ const Circle = forwardRef<
 		<div
 			ref={ref}
 			className={cn(
-				"z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+				"z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white dark:bg-neutral-900 p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
 				className,
 			)}
 		>
@@ -22,6 +22,8 @@ const Circle = forwardRef<
 		</div>
 	)
 })
+
+Circle.displayName = "Circle"
 
 export function AnimatedBackup({
 	className,
