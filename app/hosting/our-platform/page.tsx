@@ -1,5 +1,6 @@
 import { AnimatedBackup } from "@/app/hosting/our-platform/backup";
 import Breadcrumbs from "@/components/ui/breadcrumbs";
+import { Button } from "@/components/ui/button";
 import { FlipWords } from "@/components/ui/flip-words";
 import { ArrowRightIcon, Bot, CheckCircle2Icon, GitCommitIcon, MoreHorizontal, TriangleAlert } from "lucide-react";
 import Image from "next/image";
@@ -257,6 +258,24 @@ export default function OurPlatformPage() {
 							<AnimatedBackup />
 						</div>
 					</div>
+				</div>
+			</section>
+			<section className="container grid grid-cols-1 md:grid-cols-2 w-full mt-24 mb-12 p-8 animate-fade-in opacity-0 [--animation-delay:700ms] gap-8 md:gap-4">
+				<div className="flex flex-col gap-2 items-center text-center md:text-start md:items-start w-full">
+					<h1 className="text-subheader">Don&apos;t hold back. Ship with confidence.</h1>
+					<p className="text-masonry-grey">Let us handle the headache of hosting. We have cheap plans for hobbyists and small businesses and more robust options for when it get&apos;s serious.</p>
+				</div>
+				<div className="flex flex-row md:flex-col lg:flex-row gap-4 items-center md:items-end lg:items-center w-full justify-center lg:justify-end">
+					<Link href="/hosting/shared">
+						<Button variant="secondary">
+							Shared Hosting
+						</Button>
+					</Link>
+					<Link href="/hosting/dedicated">
+						<Button>
+							Dedicated Hosting
+						</Button>
+					</Link>
 				</div>
 			</section>
 		</>
