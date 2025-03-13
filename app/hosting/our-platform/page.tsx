@@ -1,8 +1,12 @@
+import { AnimatedBackup } from "@/app/hosting/our-platform/backup";
+import { AnimatedBeam } from "@/components/ui/animated-beam";
 import Breadcrumbs from "@/components/ui/breadcrumbs";
 import { FlipWords } from "@/components/ui/flip-words";
-import { ArrowRightIcon, CheckCircle2Icon, GitCommitIcon, TriangleAlert } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { ArrowRightIcon, Bot, CheckCircle2Icon, GitCommitIcon, MoreHorizontal, TriangleAlert } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { forwardRef, useRef } from "react";
 
 export default function OurPlatformPage() {
 	const deploymentWords = ["website,", "store,", "platform,", "idea,", "business,"];
@@ -65,7 +69,7 @@ export default function OurPlatformPage() {
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:400ms]">
 				<div className="flex flex-row gap-24 items-center w-full rounded-xl">
 					<div className="flex flex-col gap-4 w-full h-full">
-						<div className="text-2xl sm:text-3xl md:text-4xl font-bold font-display whitespace-nowrap">
+						<div className="text-2xl sm:text-3xl md:text-4xl font-bold font-display whitespace-nowrap min-w-[530px]">
 							Focus on your<FlipWords words={deploymentWords} /> <br />
 							Not your<FlipWords words={hostingWords} />
 						</div>
@@ -114,7 +118,7 @@ export default function OurPlatformPage() {
 								</code>
 							</div>
 							<div className="-mt-36 sm:-mt-24 z-10 sm:self-end border rounded-xl flex flex-col overflow-hidden w-full sm:max-w-sm sm:w-4/5 max-h-56 h-full">
-								<div className="w-full flex flex-row gap-2 px-2 items-center justify-between p-2 border-b bg-neutral-950">
+								<div className="w-full flex flex-row gap-2 px-2 items-center justify-between p-2 border-b bg-neutral-100 dark:bg-neutral-950">
 									<div className="flex flex-row gap-2">
 										<div className="size-2 bg-red-500 rounded-full"></div>
 										<div className="size-2 bg-yellow-500 rounded-full"></div>
@@ -122,7 +126,7 @@ export default function OurPlatformPage() {
 									</div>
 									<p className="text-masonry-grey font-mono text-xs">tygr.dev</p>
 								</div>
-								<Image src="/hosting/git-push.png" alt={"deployment"} width={680} height={300} className="object-cover object-center" />
+								<Image src="/hosting/git-push.png" alt="deployment" width={680} height={300} className="object-cover object-center" />
 							</div>
 						</div>
 					</div>
@@ -134,7 +138,7 @@ export default function OurPlatformPage() {
 							</p>
 						</div>
 						<div className="flex flex-col w-full h-full">
-							<div className="flex flex-row gap-2 items-center justify-between border rounded-xl p-3 w-full whitespace-nowrap max-w-2/3">
+							<div className="flex flex-row gap-2 items-center justify-between border rounded-xl p-3 w-full whitespace-nowrap max-w-[400px]">
 								<div className="flex flex-col gap-2 items-start justify-between overflow-hidden">
 									<div className="flex flex-row gap-1 items-start justify-between w-full">
 										<p className="text-sm"><span className="text-masonry-grey">tygr.dev/</span>aj4y2nf91</p>
@@ -173,7 +177,7 @@ export default function OurPlatformPage() {
 								</defs>
 							</svg>
 
-							<div className="flex flex-row gap-2 items-center justify-between border rounded-xl p-3 w-full whitespace-nowrap max-w-2/3 self-end">
+							<div className="flex flex-row gap-2 items-center justify-between border rounded-xl p-3 w-full whitespace-nowrap max-w-[400px] self-end">
 								<div className="flex flex-col gap-2 items-start justify-between overflow-hidden">
 									<div className="flex flex-row gap-1 items-start justify-between w-full">
 										<p className="text-sm"><span className="text-masonry-grey">tygr.dev/</span>j47xnf9yj</p>
@@ -194,7 +198,69 @@ export default function OurPlatformPage() {
 				</div>
 			</section>
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:600ms]">
-
+				<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-16 md:gap-12 lg:gap-16">
+					<div className="flex flex-col gap-4 items-start">
+						<h1 className="text-subheader font-display">Take a peek into the future</h1>
+						<p className="text-masonry-grey">
+							While working on a new feature, our platform automatically spins up a preview deployment of your site, store or platform so you can see what we're cooking up before it goes live.
+						</p>
+						<div className="w-full flex flex-col h-full items-start justify-center">
+							<div className="flex flex-row gap-3 items-start w-full pl-3">
+								<div className="flex flex-col gap-0 items-center">
+									<div className="border-l-3 rounded-full h-6" />
+									<GitCommitIcon size={24} className="text-masonry-grey" />
+									<div className="border-l-3 h-8 rounded-full" />
+								</div>
+								<div className="flex flex-row gap-2 items-center pt-6">
+									<Link href="https://github.com/tygrdotdev" target="_blank">
+										<Image src="https://github.com/tygrdotdev.png" alt="tygrdotdev" width={24} height={24} className="rounded-full border" />
+									</Link>
+									<Link href="https://github.com/masonry-studio/masonrystudio.co.uk/commit/f26058c45a4c1921e6a0d03dfbfdd18342f6fc79" target="_blank">
+										<p className="font-mono text-masonry-grey text-sm">feat: create contact page</p>
+									</Link>
+								</div>
+							</div>
+							<div className="border rounded-lg w-full">
+								<div className="flex flex-row gap-2 items-center justify-between py-2 px-4 bg-neutral-100 dark:bg-neutral-900 border-b">
+									<div className="flex flex-row gap-2 text-sm items-center">
+										<Bot size={24} />
+										<p className="font-semibold">masonry-studio-bot</p>
+										<span className="rounded-full border border-black/10 dark:border-white/10 px-2">bot</span>
+										<p className="text-neutral-500 dark:text-neutral-400 hidden lg:block">commented today</p>
+									</div>
+									<MoreHorizontal size={24} className="cursor-pointer" />
+								</div>
+								<div className="p-4">
+									<p>
+										The preview deployment is ready 🟢
+										<br /> <br />
+										<span className="text-blue-500 cursor-pointer">
+											Open Preview
+										</span>{" "}
+										{" "}|{" "}
+										<span className="text-blue-500 cursor-pointer">
+											Open Build Logs
+										</span>
+										<br /> <br />
+										Last Updated at: 2025-03-12 14:23:37 CET
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col gap-4 items-start">
+						<h1 className="text-subheader font-display">Plan B? We got it.</h1>
+						<p className="text-masonry-grey">
+							When it comes to servers, sometimes they can be
+							un-predictable. Luckily, we come prepared. All persistent storage is automatically
+							backed up every hour ensuring if anything breaks, we got
+							your back.
+						</p>
+						<div className="w-full">
+							<AnimatedBackup />
+						</div>
+					</div>
+				</div>
 			</section>
 		</>
 	)

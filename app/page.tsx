@@ -119,8 +119,8 @@ export default function Home() {
 						/>
 					</div>
 				</section>
-				<section className="flex flex-col gap-8 sm:gap-16 xl:gap-32 lg:flex-row px-4 w-full lg:justify-between animate-fade-in opacity-0 [--animation-delay:800ms]">
-					<div className="lg:max-w-[400px] xl:max-w-[600px] w-full">
+				<section className="grid grid-cols-1 gap-16 lg:gap-16 xl:gap-32 lg:grid-cols-2 px-4 justify-between animate-fade-in opacity-0 [--animation-delay:800ms]">
+					<div className="w-full">
 						<Globe />
 					</div>
 					<div className="flex flex-col gap-6 items-start w-full">
