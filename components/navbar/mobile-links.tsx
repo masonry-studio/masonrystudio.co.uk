@@ -32,9 +32,8 @@ export default function MobileLinks({
 				className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
 			>
 				<Link
-					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-						open ? "[&_a]:translate-y-0" : ""
-					}`}
+					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+						}`}
 					href={"/"}
 					onClick={() => setOpen(!open)}
 				>
@@ -46,9 +45,8 @@ export default function MobileLinks({
 				className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
 			>
 				<div
-					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-						open ? "[&_a]:translate-y-0" : ""
-					} select-none`}
+					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+						} select-none`}
 				>
 					Web Development
 				</div>
@@ -60,9 +58,8 @@ export default function MobileLinks({
 				>
 					<Link
 						href="/development/start-ups"
-						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-							open ? "[&_a]:translate-y-0" : ""
-						}`}
+						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+							}`}
 						onClick={() => {
 							setOpen(!open);
 						}}
@@ -78,9 +75,8 @@ export default function MobileLinks({
 				>
 					<Link
 						href="/development/bespoke"
-						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-							open ? "[&_a]:translate-y-0" : ""
-						}`}
+						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+							}`}
 						onClick={() => {
 							setOpen(!open);
 						}}
@@ -95,9 +91,8 @@ export default function MobileLinks({
 				className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
 			>
 				<div
-					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-						open ? "[&_a]:translate-y-0" : ""
-					} select-none`}
+					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+						} select-none`}
 				>
 					Hosting
 				</div>
@@ -109,9 +104,8 @@ export default function MobileLinks({
 				>
 					<Link
 						href="/hosting/shared"
-						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-							open ? "[&_a]:translate-y-0" : ""
-						}`}
+						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+							}`}
 						onClick={() => {
 							setOpen(!open);
 						}}
@@ -127,9 +121,8 @@ export default function MobileLinks({
 				>
 					<Link
 						href="/hosting/dedicated"
-						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-							open ? "[&_a]:translate-y-0" : ""
-						}`}
+						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+							}`}
 						onClick={() => {
 							setOpen(!open);
 						}}
@@ -143,10 +136,9 @@ export default function MobileLinks({
 					className="border-grey-dark border-b py-0.5 pl-10 md:border-none"
 				>
 					<Link
-						href="/hosting/platform"
-						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-							open ? "[&_a]:translate-y-0" : ""
-						}`}
+						href="/hosting/our-platform"
+						className={`hover:text-grey flex h-16 w-full items-center flex-row gap-3 text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+							}`}
 						onClick={() => {
 							setOpen(!open);
 						}}
@@ -161,9 +153,8 @@ export default function MobileLinks({
 				className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
 			>
 				<Link
-					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-						open ? "[&_a]:translate-y-0" : ""
-					}`}
+					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+						}`}
 					href={"/about"}
 					onClick={() => setOpen(!open)}
 				>
@@ -175,9 +166,8 @@ export default function MobileLinks({
 				className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
 			>
 				<Link
-					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-						open ? "[&_a]:translate-y-0" : ""
-					}`}
+					className={`hover:text-grey flex h-16 w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${open ? "[&_a]:translate-y-0" : ""
+						}`}
 					href={"/contact"}
 					onClick={() => setOpen(!open)}
 				>
