@@ -1,7 +1,7 @@
-import { Check, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
-export default function Price({title, desc, price, priceMethod, features}: {title: string, desc: string, price: number, priceMethod: string, features: string[]}) {
-    return(
+export default function Price({ title, desc, price, priceMethod, features }: { title: string, desc: string, price: number, priceMethod: string, features: string[] }) {
+    return (
         <div className="flex flex-col gap-4 border border-accent-foreground/40 p-8 rounded-3xl w-full md:w-fit h-full">
             <h2 className="text-subheader-2">{title}</h2>
             <p className="text-masonry-grey">{desc}</p>
