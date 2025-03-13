@@ -55,7 +55,7 @@ export default function OurPlatformPage() {
 						<h1 className="text-header">Our Platform</h1>
 						<Breadcrumbs />
 					</div>
-					<p className="pb-4 md:max-w-1/2 text-neutral-500 dark:text-neutral-400">We use the latest technologies like Next.js and Payload CMS along with a hosting solution that uses a containerized solution to deploy your site to the cloud.</p>
+					<p className="pb-4 md:max-w-1/2 text-masonry-grey">We use the latest technologies like Next.js and Payload CMS along with a hosting solution that uses a containerized solution to deploy your site to the cloud.</p>
 					<Link href="/contact">
 						<button className="my-auto backdrop-filter-[12px] group flex flex-row items-center gap-1 h-7 rounded-full border dark:border-white/5 dark:text-white text-black bg-black/5 dark:bg-white/20 px-3 text-xs hover:cursor-pointer hover:bg-black/10 dark:hover:bg-white/15">
 							Get in touch <ArrowRightIcon size={14} />
