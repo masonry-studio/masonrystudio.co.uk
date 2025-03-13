@@ -12,13 +12,11 @@ import Price from "@/components/cards/price"
 import Faqs from "@/components/faqs"
 
 const faq = [
-	{ id: 1, title: "How can I contact a specific member in the team?", content: ["Please find our specific contact details below:", "‎", "Ty Mason: ty.mason@masonrystudio.co.uk", "Andrew Mason: andrew.mason@masonrystudio.co.uk"] },
-	{ id: 2, title: "What are your buisness hours?", content: ["We are open from Monday to Friday between 9am to 5pm. We may be able to respond to any messages over the weekend but it isn't guaranteed."] },
-	{
-		id: 3,
-		title: "Got any other questions?",
-		content: ["You can contact us directly via our contact page, or by emailing us at hello@masonrystudio.co.uk"],
-	},
+    { id: 1, title: "Difference between Start up and bespoke", content: ["Our Start Up option has been developed specifically for small to medium-sized businesses. While we employ the latest technology, this solution is tailored to facilitate the initial implementation of essential features. This enables you to commence operations effectively, and as your business expands, your website can adapt and grow alongside you.", "‎", "The bespoke option is designed for medium to large enterprises seeking to elevate their website through the integration of a fully customized design, components, functionality, and automation features."] },
+    { id: 2, title: "What if we needed certain functionality?", content: ["If you require additional functionality from the outset that exceeds the capabilities of the startup option, we can provide a supplementary quote to accommodate the extra requirements."] },
+    {
+        id: 3, title: "How long does the whole process take?", content: ["The duration of the process may range from 4 to 6 weeks, contingent upon the project's size and the volume of content that needs to be generated.", "‎", "We will collaborate with you to ensure that the project is completed within the established timeline by maintaining clear and transparent communication throughout the process."],
+    },
 ];
 
 export default function StartUps() {
@@ -102,42 +100,42 @@ export default function StartUps() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <FeatureGridItem
                         title="Bespoke CMS"
-                        body="Satisfied Customers"
+                        body="A CMS platform thats built for developers allowing us the ability to built it from the ground up to work with your business."
                         icon={<TableOfContents size={32} />}
                         colour="var(--masonry-blue)"
                         cta={false}
                     />
                     <FeatureGridItem
                         title="Page Blocks"
-                        body="Satisfied Customers"
+                        body="Pages built with block instead of templates gives you great control and flexibility."
                         icon={<TableOfContents size={32} />}
                         colour="var(--masonry-orange)"
                         cta={false}
                     />
                     <FeatureGridItem
                         title="Responsive Design"
-                        body="Satisfied Customers"
+                        body="Every part of your build will be designed to fit any device that your viewers the ultimate experience."
                         icon={<TableOfContents size={32} />}
                         colour="var(--masonry-red)"
                         cta={false}
                     />
                     <FeatureGridItem
                         title="User Roles"
-                        body="Satisfied Customers"
+                        body="Need specific restrictions like who in you’re team can edit certain parts of your site. We can build specific roles allowing you full control over your team and viewers"
                         icon={<TableOfContents size={32} />}
                         colour="var(--masonry-red)"
                         cta={false}
                     />
                     <FeatureGridItem
                         title="Blog"
-                        body="Satisfied Customers"
+                        body="Your have blocks created to give you the freedom to design your blog posts how you want."
                         icon={<TableOfContents size={32} />}
                         colour="var(--masonry-blue)"
                         cta={false}
                     />
                     <FeatureGridItem
                         title="Custom Forms"
-                        body="Satisfied Customers"
+                        body="Needs a form to collect subscribers, or a contact form. We can build custom forms to fit your needs."
                         icon={<TableOfContents size={32} />}
                         colour="var(--masonry-orange)"
                         cta={false}
@@ -156,7 +154,15 @@ export default function StartUps() {
                         </div>
                         <div className="flex flex-col gap-2">
                             <h3 className="text-subheader">Design</h3>
-                            <p className="text-body text-masonry-grey">We will create a design that is tailored to your business and your audience. We will work with you to ensure that the design meets your needs and your vision.</p>
+                            <p className="text-body text-masonry-grey">We select one of our templates that suits your business and goals the best as a starting point. Once decided upon, we will then apply any tweaks neccessary to make meet your needs.</p>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <h3 className="text-subheader">Content Gathering</h3>
+                            <p className="text-body text-masonry-grey">As we design your site you will slowly start recieving request for the content we will need for the new design. This could include text, images, videos, branding guidelines, font families ...</p>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <h3 className="text-subheader">Design Sign Off</h3>
+                            <p className="text-body text-masonry-grey">With the design completed, you will recieve access to view it and sign off or request some changes. Once it is all agreed upon development can begin.</p>
                         </div>
                         <div className="flex flex-col gap-2">
                             <h3 className="text-subheader">Development</h3>

@@ -15,13 +15,21 @@ import ChecklistItem from "@/components/cards/checklist-item"
 import Faqs from "@/components/faqs"
 
 const faq = [
-	{ id: 1, title: "How can I contact a specific member in the team?", content: ["Please find our specific contact details below:", "‎", "Ty Mason: ty.mason@masonrystudio.co.uk", "Andrew Mason: andrew.mason@masonrystudio.co.uk"] },
-	{ id: 2, title: "What are your buisness hours?", content: ["We are open from Monday to Friday between 9am to 5pm. We may be able to respond to any messages over the weekend but it isn't guaranteed."] },
-	{
-		id: 3,
-		title: "Got any other questions?",
-		content: ["You can contact us directly via our contact page, or by emailing us at hello@masonrystudio.co.uk"],
-	},
+    {
+        id: 1,
+        title: "Is the site fully custom?",
+        content: ["Yes", "‎", "We design your entire website from the ground up, including page blocks and functionality, constructing every element from scratch."]
+    },
+    {
+        id: 2,
+        title: "How long does a bespoke site take?",
+        content: ["This all depends upon the agreed scope of your site. The more complex you site is the longer it will take. However, we implement build phases to ensure that your site is launched as quickly as possible.", "‎", "All Timelines will be established and agreed upon prior to the commencement of the project."]
+    },
+    {
+        id: 3,
+        title: "Got any other questions?",
+        content: ["You can contact us directly via our contact page, or by emailing us at hello@masonrystudio.co.uk"],
+    },
 ];
 
 export default function Bespoke() {
@@ -236,6 +244,10 @@ export default function Bespoke() {
                         <div className="flex flex-col gap-2">
                             <h3 className="text-subheader">Design</h3>
                             <p className="text-body text-masonry-grey">We will create a design that is tailored to your business and your audience. We will work with you to ensure that the design meets your needs and your vision.</p>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <h3 className="text-subheader">Content Gathering</h3>
+                            <p className="text-body text-masonry-grey">As we design your site you will slowly start recieving request for the content we will need for the new design. This could include text, images, videos, branding guidelines, font families ...</p>
                         </div>
                         <div className="flex flex-col gap-2">
                             <h3 className="text-subheader">Development</h3>
