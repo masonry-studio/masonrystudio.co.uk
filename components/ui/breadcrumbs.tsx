@@ -12,8 +12,8 @@ export default function Breadcrumbs() {
 
 	return (
 		<>
-			<ul className="flex items-center h-3 gap-2 text-sm">
-				<li className="text-masonry-grey list-none hover:text-black dark:hover:text-white transition-colors">
+			<ul className="flex items-center h-3 text-sm gap-2">
+				<li className="list-none text-masonry-grey hover:text-black dark:hover:text-white transition-colors">
 					<Link href="/">Home</Link>
 				</li>
 				{breadcrumbs.map((item, index) => {
@@ -25,11 +25,11 @@ export default function Breadcrumbs() {
 								<h4><ChevronRight size={18} /></h4>
 							</li>
 							{index === breadcrumbs.length - 1 ? (
-								<li key={index} className="text-masonry-grey list-none hover:text-black dark:hover:text-white transition-colors">
+								<li key={index} className="list-none text-masonry-grey hover:text-black dark:hover:text-white transition-colors">
 									<Link href={`/${path}`}>{name.split("-").map((v) => `${v.slice(0, 1).toUpperCase()}${v.slice(1)} `)}</Link>
 								</li>
 							) : (
-								<li key={index} className="text-masonry-grey list-none">
+								<li key={index} className="list-none text-masonry-grey">
 									{name}
 								</li>
 							)}

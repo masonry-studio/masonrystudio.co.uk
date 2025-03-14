@@ -7,13 +7,13 @@ import Icons from "@/components/icons";
 export default function Footer() {
 	return (
 		<>
-			<div className="flex flex-col border-t mt-12">
-				<div className="flex flex-col md:flex-row gap-8 w-full justify-between p-4 sm:p-6 md:p-8">
+			<div className="flex flex-col mt-12 border-t">
+				<div className="flex flex-col justify-between w-full p-4 md:flex-row gap-8 sm:p-6 md:p-8">
 					<div className="flex flex-col gap-4 md:w-full">
 						<Link href='/'>
 							<Icons.MasonryTitle />
 						</Link>
-						<div className="gap-2 flex flex-col">
+						<div className="flex flex-col gap-2">
 							<p>
 								Email:{" "}
 								<a href="mailto:hello@masonrystudio.co.uk">
@@ -23,10 +23,10 @@ export default function Footer() {
 							<p>Open: Mon - Fri 09:00 - 17:00</p>
 						</div>
 					</div>
-					<div className="flex gap-8 flex-wrap flex-row w-full justify-between">
-						<div className="flex flex-col gap-3 items-start md:items-center">
-							<h2 className="font-bold text-2xl">Web Dev</h2>
-							<div className="flex sm:flex-col gap-3 items-start sm:items-center flex-wrap">
+					<div className="flex flex-row flex-wrap justify-between w-full gap-8">
+						<div className="flex flex-col items-start gap-3 md:items-center">
+							<h2 className="text-2xl font-bold">Web Dev</h2>
+							<div className="flex flex-wrap items-start sm:flex-col gap-3 sm:items-center">
 								<Link href="/development/start-ups">
 									<Button
 										variant="link"
@@ -43,20 +43,20 @@ export default function Footer() {
 										Bespoke
 									</Button>
 								</Link>
-								<Link href="/development/ecommerce">
+								{/* <Link href="/development/ecommerce">
 									<Button
 										variant="link"
 										className="p-0 sm:px-4 sm:py-2"
 									>
 										Ecommerce
 									</Button>
-								</Link>
+								</Link> */}
 							</div>
 						</div>
-						<div className="flex flex-col gap-3 items-start sm:items-center">
-							<h2 className="font-bold text-2xl">Hosting</h2>
-							<div className="flex sm:flex-col gap-3 items-start sm:items-center flex-wrap">
-								<Link href="/hosting/platform">
+						<div className="flex flex-col items-start gap-3 sm:items-center">
+							<h2 className="text-2xl font-bold">Hosting</h2>
+							<div className="flex flex-wrap items-start sm:flex-col gap-3 sm:items-center">
+								<Link href="/hosting/our-platform">
 									<Button
 										variant="link"
 										className="p-0 sm:px-4 sm:py-2"
@@ -82,9 +82,9 @@ export default function Footer() {
 								</Link>
 							</div>
 						</div>
-						<div className="flex flex-col gap-3 items-start sm:items-center">
-							<h2 className="font-bold text-2xl">Other</h2>
-							<div className="flex sm:flex-col gap-3 items-start sm:items-center flex-wrap">
+						<div className="flex flex-col items-start gap-3 sm:items-center">
+							<h2 className="text-2xl font-bold">Other</h2>
+							<div className="flex flex-wrap items-start sm:flex-col gap-3 sm:items-center">
 								<Link href="/about">
 									<Button
 										variant="link"
@@ -93,14 +93,14 @@ export default function Footer() {
 										About Us
 									</Button>
 								</Link>
-								<Link href="/work">
+								{/* <Link href="/work">
 									<Button
 										variant="link"
 										className="p-0 sm:px-4 sm:py-2"
 									>
 										Our Work
 									</Button>
-								</Link>
+								</Link> */}
 								<Link href="/contact">
 									<Button
 										variant="link"
@@ -113,7 +113,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="w-full flex flex-col md:flex-row gap-4 items-center justify-between border-t dark:bg-neutral-900/50 bg-neutral-100/50 py-2 px-4">
+				<div className="flex flex-col items-center justify-between w-full px-4 py-2 border-t md:flex-row gap-4 dark:bg-neutral-900/50 bg-neutral-100/50">
 					<span className="text-sm text-neutral-500 dark:text-neutral-400">
 						Copyright © 2025 Masonry Studio. All rights reserved.
 					</span>

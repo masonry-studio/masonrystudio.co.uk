@@ -62,7 +62,7 @@ export default async function About() {
 			</svg>
 
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
-				<div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
+				<div className="flex flex-col items-start justify-center w-full h-auto gap-5">
 					<div className="w-full">
 						<h1 className="text-header">About Us</h1>
 						<Breadcrumb />
@@ -77,9 +77,9 @@ export default async function About() {
 			</section>
 
 			<section className="container my-16 lg:my-32 items-center flex flex-col w-full animate-fade-in opacity-0 [--animation-delay:300ms]">
-				<div className="grid grid-cols-1 md:grid-cols-2 w-full items-center lg:gap-16">
+				<div className="items-center w-full grid grid-cols-1 md:grid-cols-2 lg:gap-16">
 					<div className="w-full">
-						<h2 className="text-subheader mb-3">
+						<h2 className="mb-3 text-subheader">
 							Our Story<span className="text-masonry-blue">.</span>
 						</h2>
 						<div className="flex flex-col items-start gap-4 md:gap-2 text-balanced">
@@ -104,7 +104,7 @@ export default async function About() {
 							</p>
 						</div>
 					</div>
-					<div className="flex-row gap-2 hidden md:flex justify-end">
+					<div className="flex-row justify-end hidden gap-2 md:flex">
 						<Image src="https://tygr.dev/profile.png" alt="Ty" width={512} height={512} className="relative md:w-[192px] md:h-[192px] lg:size-[256px] translate-y-16 translate-x-16 border rounded-lg" />
 						<Image src="https://github.com/andyMa5on.png" alt="Andy" width={512} height={512} className="relative md:w-[192px] md:h-[192px] lg:size-[256px] -translate-y-16 rounded-lg border" />
 					</div>
@@ -112,7 +112,7 @@ export default async function About() {
 			</section>
 
 			<section className="container my-24 animate-fade-in opacity-0 [--animation-delay:400ms]">
-				<h2 className="text-center mb-8 text-4xl font-bold">
+				<h2 className="mb-8 text-4xl font-bold text-center">
 					Our values<span className="text-masonry-orange">.</span>
 				</h2>
 				<div className="grid gap-6">
@@ -168,7 +168,7 @@ export default async function About() {
 			</section>
 
 			<section className="container flex flex-col my-24 animate-fade-in opacity-0 [--animation-delay:500ms]">
-				<h2 className="text-center mb-8 text-4xl font-bold">
+				<h2 className="mb-8 text-4xl font-bold text-center">
 					Technology We Use
 					<span className="text-masonry-red">.</span>
 				</h2>
@@ -228,7 +228,7 @@ export default async function About() {
 			</section>
 
 			<section className="container flex flex-col px-8 my-24 animate-fade-in opacity-0 [--animation-delay:600ms]">
-				<h2 className="text-subheader text-center mb-8 text-for">
+				<h2 className="mb-8 text-center text-subheader text-for">
 					FAQS
 				</h2>
 				<Faqs data={faq} />

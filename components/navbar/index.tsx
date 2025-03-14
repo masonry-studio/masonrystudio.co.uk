@@ -67,11 +67,11 @@ export default function Navbar() {
 	return (
 		<>
 			<header className="animate-fade-in fixed left-0 top-0 z-50 w-full border-b bg-white dark:bg-neutral-950 opacity-0 [--animation-delay:600ms]">
-				<div className="container flex h-16 items-center justify-between">
-					<Link className="text-md flex items-center" href="/">
+				<div className="container flex items-center justify-between h-16">
+					<Link className="flex items-center text-md" href="/">
 						<Icons.Masonry className="w-8 h-8" />
 					</Link>
-					<div className="ml-auto items-center gap-2 flex-row hidden md:flex">
+					<div className="flex-row items-center hidden ml-auto gap-2 md:flex">
 						<NavbarLinks />
 					</div>
 					<button
@@ -96,9 +96,9 @@ export default function Navbar() {
 						}
 					)}
 				>
-					<div className="container flex h-16 items-center justify-between">
+					<div className="container flex items-center justify-between h-16">
 						<Link
-							className="text-md flex items-center"
+							className="flex items-center text-md"
 							href="/"
 							onClick={() =>
 								setHamburgerMenuIsOpen((open) => !open)

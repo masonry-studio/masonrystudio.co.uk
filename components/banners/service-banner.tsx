@@ -14,7 +14,7 @@ export default function ServiceBanner({
 }) {
 	return (
 		<>
-			<div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
+			<div className="flex flex-col items-start justify-center w-full h-auto gap-5">
 				<div>
 					<h1 className="text-header">{title}</h1>
 					<Breadcrumb />

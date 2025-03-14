@@ -56,7 +56,7 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<Navbar />
-					<main className="mx-auto flex-1 overflow-hidden min-h-screen">
+					<main className="flex-1 min-h-screen mx-auto overflow-hidden">
 						{children}
 					</main>
 					<Footer />

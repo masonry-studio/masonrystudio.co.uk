@@ -47,7 +47,7 @@ export function AnimatedBackup({
 			)}
 			ref={containerRef}
 		>
-			<div className="flex size-full flex-row items-stretch justify-between gap-10">
+			<div className="flex flex-row items-stretch justify-between size-full gap-10">
 				<div className="flex flex-col justify-center gap-2">
 					<Circle ref={div1Ref}>
 						<Icons.NextJS className="size-6" />

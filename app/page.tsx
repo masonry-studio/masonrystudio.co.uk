@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<>
-			<section className="relative mx-auto mt-40 max-w-7xl px-6 text-center md:px-8 pb-24">
+			<section className="relative px-6 pb-24 mx-auto mt-40 text-center max-w-7xl md:px-8">
 				<div className="backdrop-filter-[12px] animate-fade-in group inline-flex h-7 -translate-y-4 items-center justify-between gap-1 rounded-full border dark:border-white/5 bg-black/5 dark:bg-white/10 px-3 text-xs text-white opacity-0 transition-all ease-in hover:cursor-pointer hover:bg-black/10 dark:hover:bg-white/15 dark:text-black">
 					<Link href="/about">
 						<TextShimmer className="inline-flex items-center justify-center">
@@ -42,11 +42,11 @@ export default function Home() {
 						alt="Placeholder"
 						width={1200}
 						height={800}
-						className="w-full relative"
+						className="relative w-full"
 					/>
-					<div className="flex flex-col gap-6 items-start w-full">
-						<div className="flex flex-col gap-2 items-start">
-							<h2 className="font-display font-bold text-4xl">
+					<div className="flex flex-col items-start w-full gap-6">
+						<div className="flex flex-col items-start gap-2">
+							<h2 className="text-4xl font-bold font-display">
 								Start Up&apos;s
 								<span className="text-blue-500">.</span>
 							</h2>
@@ -83,9 +83,9 @@ export default function Home() {
 							className="w-full"
 						/>
 					</div>
-					<div className="flex flex-col gap-6 items-start lg:pl-10">
-						<div className="flex flex-col gap-2 items-start">
-							<h2 className="font-display font-bold text-4xl">
+					<div className="flex flex-col items-start gap-6 lg:pl-10">
+						<div className="flex flex-col items-start gap-2">
+							<h2 className="text-4xl font-bold font-display">
 								Bespoke
 								<span className="text-orange-500">.</span>
 							</h2>
@@ -123,12 +123,12 @@ export default function Home() {
 					<div className="w-full">
 						<Globe />
 					</div>
-					<div className="flex flex-col gap-6 items-start w-full">
-						<div className="flex flex-col gap-2 items-start w-full">
-							<h2 className="font-display font-bold text-4xl">
+					<div className="flex flex-col items-start w-full gap-6">
+						<div className="flex flex-col items-start w-full gap-2">
+							<h2 className="text-4xl font-bold font-display">
 								Hosting<span className="text-red-500">.</span>
 							</h2>
-							<p className="text-sans font-normal text-gray-400 w-full">
+							<p className="w-full font-normal text-gray-400 text-sans">
 								Host your business website on our reliable,
 								high-performance platform, designed for speed
 								and scalability. Our hosting ensures fast load

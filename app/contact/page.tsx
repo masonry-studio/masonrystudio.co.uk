@@ -67,7 +67,7 @@ export default function Contact() {
 	return (
 		<>
 			<section className="container flex flex-col items-center justify-center w-full mt-24 mb-12 p-8 animate-fade-in opacity-0 [--animation-delay:200ms]">
-				<h1 className="text-header pb-0 w-full text-center">Contact Us</h1>
+				<h1 className="w-full pb-0 text-center text-header">Contact Us</h1>
 				<Breadcrumb />
 				<div className="mt-5 text-center">
 					<p className="text-body text-masonry-grey">
@@ -80,7 +80,7 @@ export default function Contact() {
 				</div>
 			</section>
 			<section className="container flex flex-col justify-center gap-6 max-w-[800px] w-full animate-fade-in opacity-0 [--animation-delay:300ms]">
-				<form className="w-full flex flex-col gap-y-6" onSubmit={async (e) => {
+				<form className="flex flex-col w-full gap-y-6" onSubmit={async (e) => {
 					e.preventDefault();
 					await handleSubmit();
 				}}>
@@ -117,32 +117,32 @@ export default function Contact() {
 						onChange={(e) => setMessage(e.target.value)}
 					/>
 					<div>
-						<h3 className="text-body font-semibold">Services</h3>
+						<h3 className="font-semibold text-body">Services</h3>
 						<p className="text-xs text-masonry-grey">
 							Please Select an option from the list below.
 						</p>
 					</div>
-					<RadioGroup className="w-full gap-8 sm:gap-12 flex flex-row flex-wrap" value={service} onValueChange={(v) => setService(v)}>
+					<RadioGroup className="flex flex-row flex-wrap w-full gap-8 sm:gap-12" value={service} onValueChange={(v) => setService(v)}>
 						<div>
-							<h4 className="text-body text-masonry-grey font-semibold mb-2">
+							<h4 className="mb-2 font-semibold text-body text-masonry-grey">
 								Web Dev
 							</h4>
-							<div className="gap-2 flex flex-col">
-								<div className="flex text-sm items-center gap-2">
+							<div className="flex flex-col gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="start"
 										value="start"
 									/>
 									<label>Start Up</label>
 								</div>
-								<div className="flex text-sm items-center gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="bespoke"
 										value="bespoke"
 									/>
 									<label>Bespoke</label>
 								</div>
-								<div className="flex text-sm items-center gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="ecommerce"
 										value="ecommerce"
@@ -152,25 +152,25 @@ export default function Contact() {
 							</div>
 						</div>
 						<div>
-							<h4 className="text-body text-masonry-grey font-semibold mb-2">
+							<h4 className="mb-2 font-semibold text-body text-masonry-grey">
 								Hosting
 							</h4>
-							<div className="gap-2 flex flex-col">
-								<div className="flex text-sm items-center gap-2">
+							<div className="flex flex-col gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="platform"
 										value="platform"
 									/>
 									<label>Our Platform</label>
 								</div>
-								<div className="flex text-sm items-center gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="shared"
 										value="shared"
 									/>
 									<label>Shared Hosting</label>
 								</div>
-								<div className="flex text-sm items-center gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="dedicated"
 										value="dedicated"
@@ -180,19 +180,19 @@ export default function Contact() {
 							</div>
 						</div>
 						<div>
-							<h4 className="text-body text-masonry-grey font-semibold mb-2">
+							<h4 className="mb-2 font-semibold text-body text-masonry-grey">
 								Other
 							</h4>
-							<div className="gap-2 flex flex-col">
-								<div className="flex text-sm items-center gap-2">
+							<div className="flex flex-col gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem id="service" value="quote" />
 									<label>Get a Quote</label>
 								</div>
-								<div className="flex text-sm items-center gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem id="service" value="idea" />
 									<label>Discuss your idea</label>
 								</div>
-								<div className="flex text-sm items-center gap-2">
+								<div className="flex items-center text-sm gap-2">
 									<RadioGroupItem id="service" value="query" />
 									<label>General Query</label>
 								</div>

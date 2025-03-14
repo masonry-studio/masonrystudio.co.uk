@@ -12,10 +12,10 @@ export default function FeatureGridItem({
 	cta: boolean;
 }) {
 	return (
-		<div className="relative overflow-hidden flex flex-col bg-neutral-100/80 dark:bg-neutral-900/80 rounded-2xl w-full p-4 gap-4">
+		<div className="relative flex flex-col w-full p-4 overflow-hidden bg-neutral-100/80 dark:bg-neutral-900/80 rounded-2xl gap-4">
 			{icon}
 			<h3 className="text-subheader-2">{title}</h3>
-			<p className="text-body text-neutral-500 dark:text-neutral-400 min-h-10 mb-8">
+			<p className="mb-8 text-body text-neutral-500 dark:text-neutral-400 min-h-10">
 				{body}
 			</p>
 			{cta && (

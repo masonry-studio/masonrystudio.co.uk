@@ -17,7 +17,7 @@ import { ThemeToggle } from "../theme/toggle";
 
 export default function NavbarLinks() {
 	return (
-		<NavigationMenu className="sm:block hidden">
+		<NavigationMenu className="hidden sm:block">
 			<NavigationMenuList>
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>
@@ -114,7 +114,7 @@ const ListItem = ({
 					<div className="text-sm font-medium leading-none">
 						{title}
 					</div>
-					<p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+					<p className="text-sm leading-snug line-clamp-2 text-muted-foreground">
 						{children}
 					</p>
 				</a>

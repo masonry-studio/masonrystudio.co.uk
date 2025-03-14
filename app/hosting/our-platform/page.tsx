@@ -51,7 +51,7 @@ export default function OurPlatformPage() {
 			</svg>
 
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:300ms]">
-				<div className="w-full flex flex-col gap-5 items-start justify-center h-auto">
+				<div className="flex flex-col items-start justify-center w-full h-auto gap-5">
 					<div className="w-full">
 						<h1 className="text-header">Our Platform</h1>
 						<Breadcrumbs />
@@ -65,8 +65,8 @@ export default function OurPlatformPage() {
 				</div>
 			</section>
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:400ms]">
-				<div className="flex flex-row gap-24 items-center w-full rounded-xl">
-					<div className="flex flex-col gap-4 w-full h-full">
+				<div className="flex flex-row items-center w-full gap-24 rounded-xl">
+					<div className="flex flex-col w-full h-full gap-4">
 						<div className="text-2xl sm:text-3xl md:text-4xl font-bold font-display whitespace-nowrap min-w-[530px]">
 							Focus on your<FlipWords words={deploymentWords} /> <br />
 							Not your<FlipWords words={hostingWords} />
@@ -81,28 +81,28 @@ export default function OurPlatformPage() {
 						</p>
 					</div>
 					<div className="grid-cols-2 gap-4 justify-items-center relative w-full h-[20rem] overflow-hidden hidden lg:grid">
-						<Image className="absolute w-72 top-8 left-0 border rounded-xl" src="/hosting/server-rack.svg" alt="server rack" width={680} height={1330} />
-						<Image className="absolute w-72 right-0 border rounded-xl" src="/hosting/server-rack.svg" alt="server rack" width={680} height={1330} />
+						<Image className="absolute left-0 border w-72 top-8 rounded-xl" src="/hosting/server-rack.svg" alt="server rack" width={680} height={1330} />
+						<Image className="absolute right-0 border w-72 rounded-xl" src="/hosting/server-rack.svg" alt="server rack" width={680} height={1330} />
 					</div>
 				</div>
 			</section>
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:500ms]">
-				<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-16 md:gap-12 lg:gap-16">
-					<div className="gap-8 flex flex-col items-start">
-						<div className="flex flex-col gap-4 items-start">
+				<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 lg:gap-16">
+					<div className="flex flex-col items-start gap-8">
+						<div className="flex flex-col items-start gap-4">
 							<h1 className="text-subheader font-display">From localhost to https, <br /> in seconds</h1>
 							<p className="text-masonry-grey">
 								Using Git, we can push a new update to your site and have the changed applied to production in seconds. Don&apos;t fret! Your site will never go down during this process.
 							</p>
 						</div>
-						<div className="flex flex-col gap-4 items-center sm:items-start w-full h-full md:p-4">
+						<div className="flex flex-col items-center w-full h-full gap-4 sm:items-start md:p-4">
 							<div className="-z-10 border rounded-xl flex flex-col gap-3 overflow-hidden sm:max-w-sm w-[calc(100%-2rem)] sm:w-4/5 p-4 min-h-56 max-h-56 h-full">
-								<div className="w-full flex flex-row gap-2">
-									<div className="size-2 bg-red-500 rounded-full"></div>
-									<div className="size-2 bg-yellow-500 rounded-full"></div>
-									<div className="size-2 bg-green-500 rounded-full"></div>
+								<div className="flex flex-row w-full gap-2">
+									<div className="bg-red-500 rounded-full size-2"></div>
+									<div className="bg-yellow-500 rounded-full size-2"></div>
+									<div className="bg-green-500 rounded-full size-2"></div>
 								</div>
-								<code className="font-mono text-xs whitespace-nowrap overflow-hidden">
+								<code className="overflow-hidden font-mono text-xs whitespace-nowrap">
 									~/sites/tygr.dev: git push<br />
 									Enumerating objects: 12. done. <br />
 									Counting objects: 100% (12/12). done.<br />
@@ -115,21 +115,21 @@ export default function OurPlatformPage() {
 									✅ tygr.dev has been deployed!
 								</code>
 							</div>
-							<div className="-mt-36 sm:-mt-24 z-10 sm:self-end border rounded-xl flex flex-col overflow-hidden w-full sm:max-w-sm sm:w-4/5 max-h-56 h-full">
-								<div className="w-full flex flex-row gap-2 px-2 items-center justify-between p-2 border-b bg-neutral-100 dark:bg-neutral-950">
+							<div className="z-10 flex flex-col w-full h-full overflow-hidden border -mt-36 sm:-mt-24 sm:self-end rounded-xl sm:max-w-sm sm:w-4/5 max-h-56">
+								<div className="flex flex-row items-center justify-between w-full p-2 px-2 border-b gap-2 bg-neutral-100 dark:bg-neutral-950">
 									<div className="flex flex-row gap-2">
-										<div className="size-2 bg-red-500 rounded-full"></div>
-										<div className="size-2 bg-yellow-500 rounded-full"></div>
-										<div className="size-2 bg-green-500 rounded-full"></div>
+										<div className="bg-red-500 rounded-full size-2"></div>
+										<div className="bg-yellow-500 rounded-full size-2"></div>
+										<div className="bg-green-500 rounded-full size-2"></div>
 									</div>
-									<p className="text-masonry-grey font-mono text-xs">tygr.dev</p>
+									<p className="font-mono text-xs text-masonry-grey">tygr.dev</p>
 								</div>
 								<Image src="/hosting/git-push.png" alt="deployment" width={680} height={300} className="object-cover object-center" />
 							</div>
 						</div>
 					</div>
-					<div className="gap-8 flex flex-col items-start">
-						<div className="flex flex-col gap-4 items-start">
+					<div className="flex flex-col items-start gap-8">
+						<div className="flex flex-col items-start gap-4">
 							<h1 className="text-subheader font-display">Something break? <br /> Don&apos;t Sweat.</h1>
 							<p className="text-masonry-grey">
 								In the event we screw something up, we can easily rollback your site, store or platform to an earlier version with zero downtime. Go ahead, ship on a Friday.
@@ -137,14 +137,14 @@ export default function OurPlatformPage() {
 						</div>
 						<div className="flex flex-col w-full h-full">
 							<div className="flex flex-row gap-2 items-center justify-between border rounded-xl p-3 w-full whitespace-nowrap max-w-[400px]">
-								<div className="flex flex-col gap-2 items-start justify-between overflow-hidden">
-									<div className="flex flex-row gap-1 items-start justify-between w-full">
+								<div className="flex flex-col items-start justify-between overflow-hidden gap-2">
+									<div className="flex flex-row items-start justify-between w-full gap-1">
 										<p className="text-sm"><span className="text-masonry-grey">tygr.dev/</span>aj4y2nf91</p>
 										<p className="text-sm">1d ago</p>
 									</div>
-									<div className="flex flex-row gap-1 items-start">
+									<div className="flex flex-row items-start gap-1">
 										<GitCommitIcon size={24} />
-										<div className="flex flex-row gap-2 w-full">
+										<div className="flex flex-row w-full gap-2">
 											<p>2a67b43 </p>
 											<span className="font-mono">feat: add album preview...</span>
 										</div>
@@ -176,14 +176,14 @@ export default function OurPlatformPage() {
 							</svg>
 
 							<div className="flex flex-row gap-2 items-center justify-between border rounded-xl p-3 w-full whitespace-nowrap max-w-[400px] self-end">
-								<div className="flex flex-col gap-2 items-start justify-between overflow-hidden">
-									<div className="flex flex-row gap-1 items-start justify-between w-full">
+								<div className="flex flex-col items-start justify-between overflow-hidden gap-2">
+									<div className="flex flex-row items-start justify-between w-full gap-1">
 										<p className="text-sm"><span className="text-masonry-grey">tygr.dev/</span>j47xnf9yj</p>
 										<p className="text-sm">10m ago</p>
 									</div>
-									<div className="flex flex-row gap-1 items-start">
+									<div className="flex flex-row items-start gap-1">
 										<GitCommitIcon size={24} />
-										<div className="flex flex-row gap-2 w-full">
+										<div className="flex flex-row w-full gap-2">
 											<p>a7dcb3f </p>
 											<span className="font-mono">fix: spotify now playing...</span>
 										</div>
@@ -196,35 +196,35 @@ export default function OurPlatformPage() {
 				</div>
 			</section>
 			<section className="container flex flex-row w-full my-24 p-8 animate-fade-in opacity-0 [--animation-delay:600ms]">
-				<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-16 md:gap-12 lg:gap-16">
-					<div className="flex flex-col gap-4 items-start">
+				<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 lg:gap-16">
+					<div className="flex flex-col items-start gap-4">
 						<h1 className="text-subheader font-display">Take a peek into the future</h1>
 						<p className="text-masonry-grey">
 							While working on a new feature, our platform automatically spins up a preview deployment of your site, store or platform so you can see what we&apos;re cooking up before it goes live.
 						</p>
-						<div className="w-full flex flex-col h-full items-start justify-center">
-							<div className="flex flex-row gap-3 items-start w-full pl-3">
-								<div className="flex flex-col gap-0 items-center">
-									<div className="border-l-3 rounded-full h-6" />
+						<div className="flex flex-col items-start justify-center w-full h-full">
+							<div className="flex flex-row items-start w-full pl-3 gap-3">
+								<div className="flex flex-col items-center gap-0">
+									<div className="h-6 rounded-full border-l-3" />
 									<GitCommitIcon size={24} className="text-masonry-grey" />
-									<div className="border-l-3 h-8 rounded-full" />
+									<div className="h-8 rounded-full border-l-3" />
 								</div>
-								<div className="flex flex-row gap-2 items-center pt-6">
+								<div className="flex flex-row items-center pt-6 gap-2">
 									<Link href="https://github.com/tygrdotdev" target="_blank">
-										<Image src="https://github.com/tygrdotdev.png" alt="tygrdotdev" width={24} height={24} className="rounded-full border" />
+										<Image src="https://github.com/tygrdotdev.png" alt="tygrdotdev" width={24} height={24} className="border rounded-full" />
 									</Link>
 									<Link href="https://github.com/masonry-studio/masonrystudio.co.uk/commit/f26058c45a4c1921e6a0d03dfbfdd18342f6fc79" target="_blank">
-										<p className="font-mono text-masonry-grey text-sm">feat: create contact page</p>
+										<p className="font-mono text-sm text-masonry-grey">feat: create contact page</p>
 									</Link>
 								</div>
 							</div>
-							<div className="border rounded-lg w-full">
-								<div className="flex flex-row gap-2 items-center justify-between py-2 px-4 bg-neutral-100 dark:bg-neutral-900 border-b">
-									<div className="flex flex-row gap-2 text-sm items-center">
+							<div className="w-full border rounded-lg">
+								<div className="flex flex-row items-center justify-between px-4 py-2 border-b gap-2 bg-neutral-100 dark:bg-neutral-900">
+									<div className="flex flex-row items-center text-sm gap-2">
 										<Bot size={24} />
 										<p className="font-semibold">masonry-studio-bot</p>
-										<span className="rounded-full border border-black/10 dark:border-white/10 px-2">bot</span>
-										<p className="text-neutral-500 dark:text-neutral-400 hidden lg:block">commented today</p>
+										<span className="px-2 border rounded-full border-black/10 dark:border-white/10">bot</span>
+										<p className="hidden text-neutral-500 dark:text-neutral-400 lg:block">commented today</p>
 									</div>
 									<MoreHorizontal size={24} className="cursor-pointer" />
 								</div>
@@ -246,7 +246,7 @@ export default function OurPlatformPage() {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col gap-4 items-start">
+					<div className="flex flex-col items-start gap-4">
 						<h1 className="text-subheader font-display">Plan B? We got it.</h1>
 						<p className="text-masonry-grey">
 							When it comes to servers, sometimes they can be
@@ -261,11 +261,11 @@ export default function OurPlatformPage() {
 				</div>
 			</section>
 			<section className="container grid grid-cols-1 md:grid-cols-2 w-full mt-24 mb-12 p-8 animate-fade-in opacity-0 [--animation-delay:700ms] gap-8 md:gap-4">
-				<div className="flex flex-col gap-2 items-center text-center md:text-start md:items-start w-full">
+				<div className="flex flex-col items-center w-full text-center gap-2 md:text-start md:items-start">
 					<h1 className="text-subheader">Don&apos;t hold back. Ship with confidence.</h1>
 					<p className="text-masonry-grey">Let us handle the headache of hosting. We have cheap plans for hobbyists and small businesses and more robust options for when it get&apos;s serious.</p>
 				</div>
-				<div className="flex flex-row md:flex-col lg:flex-row gap-4 items-center md:items-end lg:items-center w-full justify-center lg:justify-end">
+				<div className="flex flex-row items-center justify-center w-full md:flex-col lg:flex-row gap-4 md:items-end lg:items-center lg:justify-end">
 					<Link href="/hosting/shared">
 						<Button variant="secondary">
 							Shared Hosting
