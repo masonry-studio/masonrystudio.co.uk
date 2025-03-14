@@ -68,7 +68,7 @@ export default function Home() {
 								with your startup!
 							</p>
 						</div>
-						<Link href="/development/startups">
+						<Link href="/development/start-ups">
 							<Button>Learn More</Button>
 						</Link>
 					</div>
@@ -145,7 +145,7 @@ export default function Home() {
 								your business!
 							</p>
 						</div>
-						<Link href="/development/hosting">
+						<Link href="/hosting/our-platform">
 							<Button>Learn More</Button>
 						</Link>
 					</div>
