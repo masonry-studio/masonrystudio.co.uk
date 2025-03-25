@@ -64,7 +64,7 @@ export default function Footer() {
 										Our Platform
 									</Button>
 								</Link>
-								<Link href="/hosting/shared">
+								{/* <Link href="/hosting/shared">
 									<Button
 										variant="link"
 										className="p-0 sm:px-4 sm:py-2"
@@ -79,7 +79,7 @@ export default function Footer() {
 									>
 										Dedicated Hosting
 									</Button>
-								</Link>
+								</Link> */}
 							</div>
 						</div>
 						<div className="flex flex-col items-start gap-3 sm:items-center">

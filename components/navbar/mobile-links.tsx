@@ -98,7 +98,7 @@ export default function MobileLinks({
 				</div>
 			</motion.li>
 			<motion.ul className="flex flex-col uppercase ease-in md:flex-row md:items-center md:normal-case">
-				<motion.li
+				{/* <motion.li
 					variants={mobileLinkVar}
 					className="border-grey-dark border-b py-0.5 pl-10 md:border-none"
 				>
@@ -130,7 +130,7 @@ export default function MobileLinks({
 						<CornerDownRight className="w-4 h-4" />
 						Dedicated Hosting
 					</Link>
-				</motion.li>
+				</motion.li> */}
 				<motion.li
 					variants={mobileLinkVar}
 					className="border-grey-dark border-b py-0.5 pl-10 md:border-none"

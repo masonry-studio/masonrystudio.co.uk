@@ -1,6 +1,5 @@
 import { AnimatedBackup } from "@/app/hosting/our-platform/backup";
 import Breadcrumbs from "@/components/ui/breadcrumbs";
-import { Button } from "@/components/ui/button";
 import { FlipWords } from "@/components/ui/flip-words";
 import { ArrowRightIcon, Bot, CheckCircle2Icon, GitCommitIcon, MoreHorizontal, TriangleAlert } from "lucide-react";
 import Image from "next/image";
@@ -260,7 +259,7 @@ export default function OurPlatformPage() {
 					</div>
 				</div>
 			</section>
-			<section className="container grid grid-cols-1 md:grid-cols-2 w-full mt-24 mb-12 p-8 animate-fade-in opacity-0 [--animation-delay:700ms] gap-8 md:gap-4">
+			{/* <section className="container grid grid-cols-1 md:grid-cols-2 w-full mt-24 mb-12 p-8 animate-fade-in opacity-0 [--animation-delay:700ms] gap-8 md:gap-4">
 				<div className="flex flex-col items-center w-full text-center gap-2 md:text-start md:items-start">
 					<h1 className="text-subheader">Don&apos;t hold back. Ship with confidence.</h1>
 					<p className="text-masonry-grey">Let us handle the headache of hosting. We have cheap plans for hobbyists and small businesses and more robust options for when it get&apos;s serious.</p>
@@ -277,7 +276,7 @@ export default function OurPlatformPage() {
 						</Button>
 					</Link>
 				</div>
-			</section>
+			</section> */}
 		</>
 	)
 }

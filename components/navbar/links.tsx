@@ -50,7 +50,7 @@ export default function NavbarLinks() {
 					<NavigationMenuTrigger>Hosting</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-							<ListItem
+							{/* <ListItem
 								href="/hosting/shared"
 								title="Shared Hosting"
 							>
@@ -63,7 +63,7 @@ export default function NavbarLinks() {
 							>
 								High performance dedicated hosting for your
 								business.
-							</ListItem>
+							</ListItem> */}
 							<ListItem
 								href="/hosting/our-platform"
 								title="Our Platform"

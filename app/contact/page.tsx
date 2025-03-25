@@ -163,7 +163,7 @@ export default function Contact() {
 									/>
 									<label>Our Platform</label>
 								</div>
-								<div className="flex items-center text-sm gap-2">
+								{/* <div className="flex items-center text-sm gap-2">
 									<RadioGroupItem
 										id="shared"
 										value="shared"
@@ -176,7 +176,7 @@ export default function Contact() {
 										value="dedicated"
 									/>
 									<label>Dedicated Hosting</label>
-								</div>
+								</div> */}
 							</div>
 						</div>
 						<div>
